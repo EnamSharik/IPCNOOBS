@@ -61,3 +61,9 @@ body {
   .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
   }
+
+  .stater-template{
+    padding: 60px 15px;
+    text-align: center;
+    color: white
+  } 
