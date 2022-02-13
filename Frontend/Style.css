@@ -22,7 +22,7 @@ body {
     position: relative;
     z-index: 1;
     background: inherit;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -67,3 +67,17 @@ body {
     text-align: center;
     color: white
   } 
+
+  .esquinas-redondeadas {
+  border-radius: 20px;
+  background-color:white
+  }
+
+  .vertical-scrollable> .row {
+    position: absolute;
+    top: 120px;
+    bottom: 100px;
+    left: 180px;
+    width: 50%;
+    overflow-y: scroll; 
+  }
