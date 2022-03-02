@@ -70,6 +70,13 @@ body {
     color: white
   } 
 
+  h2{
+    color: white
+  }
+  h3{
+    color: white
+  }
+
   .esquinas-redondeadas {
   border-radius: 20px;
   background-color:white
@@ -77,4 +84,9 @@ body {
 
   #header {
     background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat ;
+  }
+
+  label{
+    color: #ffffff;
+    text-align: justify;
   }
