@@ -5,26 +5,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <LINK REL=StyleSheet HREF="style.css">
-    <link rel="icon" href="img/favicon.png">
+    <LINK REL=StyleSheet HREF="/Frontend/Style.css">
+    <link rel="icon" href="/Frontend/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
+        
 
     <title>IPCNOOBS</title>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-dark  fixed-top" style="background-color: #34495E;">
+    <nav class="navbar navbar-dark  fixed-top"  style="background-color: #34495E;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">IPCNOOBS</a>
+            <a class="navbar-brand" href="/Frontend/index.html">IPCNOOBS</a>
 
             <!-- Menú Lateral -->
             <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
@@ -37,7 +37,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html"> <svg
+                            <a class="nav-link active" aria-current="page" href="/Frontend/index.html"> <svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-house" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -56,10 +56,10 @@
                                 </svg> Java
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="Java/java-install.html">Instalación</a></li>
-                                <li><a class="dropdown-item" href="Java/java-ides.html">IDES</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html">Instalación</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-ides.html">IDES</a></li>
                                 <li>
-                                    <a class="dropdown-item">
+                                    <a class="dropdown-item" href="#">
                                         Programación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                             <path
@@ -68,7 +68,7 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item" href="Java/java-notions.html">Nociones Basicas <svg
+                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html">Nociones Basicas <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
@@ -76,21 +76,27 @@
                                                 </svg> </a>
                                             <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
+                                                    <a class="dropdown-item" href="#">Algoritmos</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
+                                                    <a class="dropdown-item" href="#">Variables y constantes</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="Java/Comentarios.html">Comentarios</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Estructuras de control</a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item" href="Java/FuncionesMetodos.html">Métodos y Funciones</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="Java/Comentarios.html">Comentarios</a>
+                                                    <a class="dropdown-item" href="#">Api de Java</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="Java/java-class.html">Clases <svg
+                                            <a class="dropdown-item" href="/Frontend/Java/java-class.html">Clases <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
@@ -106,7 +112,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="Java/java-poo.html">POO <svg
+                                            <a class="dropdown-item" href="/Frontend/Java/java-poo.html">POO <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
@@ -119,6 +125,7 @@
                                                 <li>
                                                     <a class="dropdown-item" href="#">Multi level 2</a>
                                                 </li>
+                                                
                                             </ul>
                                         </li>
                                         <li>
@@ -130,10 +137,10 @@
                                                 </svg> </a>
                                             <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
+                                                    <a class="dropdown-item" href="/Frontend/Java/java-swing-components.html">Componentes</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
+                                                    <a class="dropdown-item" href="/Frontend/Java/java-swing-layouts.html">Layouts</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -152,9 +159,8 @@
                                 </svg> Python
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="Python/python-install.html">Instalación</a></li>
-                                <li><a class="dropdown-item" href="Python/python-ides.html">IDES y Editores de texto</a>
-                                </li>
+                                <li><a class="dropdown-item" href="/Frontend/Python/python-install.html">Instalación</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Python/python-ides.html">IDES y Editores de texto</a></li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         Programación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -165,8 +171,8 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item" href="Python/python-notions.html">Nociones Basicas
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            <a class="dropdown-item" href="/Frontend/Python/python-notions.html">Nociones Basicas <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
                                                         d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
@@ -181,10 +187,9 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="Python/python-reservedwords.html">Palabras
-                                                Reservadas <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-caret-down"
-                                                    viewBox="0 0 16 16">
+                                            <a class="dropdown-item" href="/Frontend/Python/python-reservedwords.html">Palabras Reservadas <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
                                                         d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
                                                 </svg> </a>
@@ -198,7 +203,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="Python/python-flask.html">Flask <svg
+                                            <a class="dropdown-item" href="/Frontend/Python/python-flask.html">Flask <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
@@ -218,7 +223,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="extra/labels.html"> <svg
+                            <a class="nav-link active" aria-current="page" href="/Frontend/extra/labels.html"> <svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-filetype-html" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -235,9 +240,9 @@
                                 </svg> CSS
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="CSS/css-insert.html">Insertar CSS</a></li>
-                                <li><a class="dropdown-item" href="CSS/css-reference.html">Referencias a HTML</a></li>
-                                <li><a class="dropdown-item" href="CSS/css-attrib.html">Atributos</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/CSS/css-insert.html">Insertar CSS</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/CSS/css-reference.html">Referencias a HTML</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/CSS/css-attrib.html">Atributos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -251,7 +256,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="Javascript/js-notions.html">Nociones Basicas <svg
+                                    <a class="dropdown-item" href="/Frontend/Javascript/js-notions.html">Nociones Basicas <svg
                                             xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                             <path
@@ -267,10 +272,9 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="Javascript/js-communication.html">Comunicación
-                                        JavaScript - Python <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                            height="16" fill="currentColor" class="bi bi-caret-down"
-                                            viewBox="0 0 16 16">
+                                    <a class="dropdown-item" href="/Frontend/Javascript/js-communication.html">Comunicación JavaScript - Python <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                             <path
                                                 d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
                                         </svg> </a>
@@ -286,7 +290,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="extra/googlehow.html"> <svg
+                            <a class="nav-link active" aria-current="page" href="/Frontend/extra/googlehow.html"> <svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-google" viewBox="0 0 16 16">
                                     <path
@@ -305,14 +309,12 @@
                                 Optimizar tu computadora
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="extra/optim-windows.html">Alternativa 1 - Optimizar
-                                        Windows</a></li>
-                                <li><a class="dropdown-item" href="extra/optim-linux.html">Alternativa 2 - Instalación
-                                        de Linux</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/extra/optim-windows.html">Alternativa 1 - Optimizar Windows</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/extra/optim-linux.html">Alternativa 2 - Instalación de Linux</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="extra/maintenance.html"> <svg
+                            <a class="nav-link active" aria-current="page" href="/Frontend/extra/maintenance.html"> <svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-motherboard" viewBox="0 0 16 16">
                                     <path
@@ -332,64 +334,45 @@
     </nav>
 
     <div class="div-central container">
-        <div class="form-group">
-            <div class="div-master">
 
+        <div class="stater-template">
+            <h1>METODOS | FUNCIONES</h1>
+            <p class="lead">Métodos y Funsiones</p>
+        </div>
+        <div class="container">
+            <div class="form-group">
+               <h2> ¿Qué es una función?</h2>
+            <label>Las funciones son diseñadas para realizar tareas específicas: toman una lista de valores llamados argumento y devuelven un único valor.</p></label>  
+            </div>
+            <br>
+            <div class="form-group">
+                <h2 class="text-white bg-dark">FUNCIONES EN JAVA</h2>
+                <h2>Declaración de funciones: </h2>
+                <label>Una función como tal sub-algoritmo o sub-programa tiene una constitución similar a los algoritmos, por consiguiente, constará de una cabecera que comenzará con el tipo del valor devuelto por la función, seguido de la palabra función y del nombre y argumentos de dicha función.</p></label>
+                <img src="/Frontend/img/Funcion_1.png" class="img-fluid" alt="...">
+                <p>>La sentencia devolver (return) termina inmediatamente la función en la cual se ejecuta.</p>
 
-                <div class="row justify-content-center">
-                    <div class="col-3">
+                <h2>Invocación a las funciones: </h2>
+                <label>Cada vez que se llama a una función desde el algoritmo principal se establece automáticamente una correspondencia entre los parámetros formales y los parámetros actuales. Debe haber exactamente el mismo número de parámetros actuales que de parámetros formales en la declaración de la función y se presupone una correspondencia uno a uno de izquierda a derecha entre los parámetros formales y los actuales. Una función puede ser llamada de la forma siguiente:</p></label>
+                <img src="/Frontend/img/LLamado_Funcion_1.png" class="img-fluid" alt="...">
 
-                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget vel
-                        nisi.
-                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                        volutpat. Aenean
-                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat. Cras
-                        mattis
-                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                        viverra sit amet.
-                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis ligula,
-                        vel luctus
-                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus in
-                        scelerisque
-                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
-                    </div>
-                    <div class="col-9">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante velit, iaculis eu nunc non,
-                        ornare
-                        sollicitudin nisi. Quisque ultrices rutrum dui, id facilisis ligula malesuada sit amet. Nam quis
-                        massa eget
-                        risus venenatis vehicula in et erat. Duis commodo quam ut erat faucibus vehicula quis imperdiet
-                        ligula.
-                        Pellentesque porttitor semper risus ut condimentum. Integer laoreet ligula a lobortis gravida.
-                        Ut tincidunt
-                        neque auctor, interdum lectus vel, tincidunt mi. Vestibulum aliquam ante eget leo auctor
-                        suscipit. Etiam
-                        sollicitudin dui eget tortor venenatis, ac placerat elit porta. Donec pulvinar pretium dolor,
-                        sed aliquet
-                        nibh accumsan eget.
-
-                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget vel
-                        nisi.
-                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                        volutpat. Aenean
-                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat. Cras
-                        mattis
-                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                        viverra sit amet.
-                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis ligula,
-                        vel luctus
-                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus in
-                        scelerisque
-                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
-                    </div>
-                </div>
-
-
-
-
-
+                <h2 class="text-white bg-dark">METODOS EN JAVA</h2>
+                <label>Los métodos son subrutinas que manipulan los datos definidos por la clase y, en muchos casos, brindan acceso a esos datos. En la mayoría de los casos, otras partes de tu programa interactuarán con una clase a través de sus métodos.</p></label>
+                <h2>¿Cómo se escribe un método?</h2>
+                <label>Un método tendrá paréntesis después de su nombre. Por ejemplo, si el nombre de un método es carro, mensaje, comida, etc. Se escribirá mensaje (), carro (), comida (),  cuando su nombre se usa en una sentencia. Esta notación lo ayudará a distinguir los nombres de las variables de los nombres de los métodos.</p>La forma general de un método se muestra a continuación:</p></label>
+                <img src="/Frontend/img/Metodo_1.png" alt="...">
+                <label>•	Aquí, tipo-retorno especifica el tipo de datos devueltos por el método. Puede ser cualquier tipo válido, incluidos los tipos de clase que cree. Si el método no devuelve un valor, su tipo de devolución debe ser void.</p>•	El nombre del método se especifica por nombre. Puede ser cualquier identificador legal que no sea el que ya utilizan otros elementos dentro del alcance actual.</p></p>•	La lista de parámetros es una secuencia de tipos e identificadores separados por comas. Los parámetros son esencialmente variables que reciben el valor de los argumentos pasados al método cuando se llama. Si el método no tiene parámetros, la lista de parámetros estará vacía.</label>
+                <h2>LLamado del método a la clase principal:</h2>
+                <img src="/Frontend/img/LLamado_M%C3%A9todo_1.png" alt="...">
+                <h2>Otro tipo de método muy comun en la programación es la siguiente:</h2>
+                <img src="/Frontend/img/Metodo_2.png" alt="...">
+                
+                <h2>Ejemplo de un programa utilizando metodos y funciones:</h2>
+                <label>Este ejercicio concistio en crear funciones las cuales contendran operaciones suma, resta y multiplicación. Se creeara un método donde se ejecutaran e imprimiran los resultados de dichas funciones.</p></label>
+                <img src="/Frontend/img/Ejercicio_M%C3%A9todo_Funci%C3%B3n.png" class="img-fluid" alt="...">
 
             </div>
+           <br>
         </div>
     </div>
 
