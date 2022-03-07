@@ -18,7 +18,7 @@
 
 
 <body>
-    <nav class="navbar navbar-dark  fixed-top"  style="background-color: #34495E;">
+    <nav class="navbar navbar-dark  fixed-top list-group" id="list-example" style="background-color: #34495E;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
@@ -56,7 +56,8 @@
                                 </svg> Java
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html">Instalación</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html">Instalación</a>
+                                </li>
                                 <li><a class="dropdown-item" href="/Frontend/Java/java-ides.html">IDES</a></li>
                                 <li>
                                     <a class="dropdown-item" href="#">
@@ -68,30 +69,36 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html">Nociones Basicas <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html">Nociones
+                                                Basicas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
                                                         d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
                                                 </svg> </a>
                                             <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Algoritmos</a>
+                                                    <a class="dropdown-item list-group-item list-group-item-action"
+                                                        href="#algoritmo-list">Algoritmos</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Variables y constantes</a>
+                                                    <a class="dropdown-item list-group-item list-group-item-action"
+                                                        href="#var-list">Variables y constantes</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Comentarios</a>
+                                                    <a class="dropdown-item list-group-item list-group-item-action"
+                                                        href="#ctrl-list">Estructuras de control</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Estructuras de control</a>
+                                                    <a class="dropdown-item list-group-item list-group-item-action"
+                                                        href="#met-list">Metodos y funciones</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Métodos y funciones</a>
+                                                    <a class="dropdown-item list-group-item list-group-item-action"
+                                                        href="#comentarios-list">Comentarios</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Api de Java</a>
+                                                    <a class="dropdown-item list-group-item list-group-item-action"
+                                                        href="#api-list">Api de java</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -136,10 +143,12 @@
                                                 </svg> </a>
                                             <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
                                                 <li>
-                                                    <a class="dropdown-item" href="/Frontend/Java/java-swing-components.html">Componentes</a>
+                                                    <a class="dropdown-item"
+                                                        href="/Frontend/Java/java-swing-components.html">Componentes</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="/Frontend/Java/java-swing-layouts.html">Layouts</a>
+                                                    <a class="dropdown-item"
+                                                        href="/Frontend/Java/java-swing-layouts.html">Layouts</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -158,8 +167,10 @@
                                 </svg> Python
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/Python/python-install.html">Instalación</a></li>
-                                <li><a class="dropdown-item" href="/Frontend/Python/python-ides.html">IDES y Editores de texto</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Python/python-install.html">Instalación</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Frontend/Python/python-ides.html">IDES y Editores de
+                                        texto</a></li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         Programación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -170,7 +181,8 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Python/python-notions.html">Nociones Basicas <svg
+                                            <a class="dropdown-item"
+                                                href="/Frontend/Python/python-notions.html">Nociones Basicas <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
@@ -186,8 +198,9 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Python/python-reservedwords.html">Palabras Reservadas <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            <a class="dropdown-item"
+                                                href="/Frontend/Python/python-reservedwords.html">Palabras Reservadas
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
                                                         d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
@@ -202,8 +215,8 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Python/python-flask.html">Flask <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            <a class="dropdown-item" href="/Frontend/Python/python-flask.html">Flask
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                                     <path
                                                         d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
@@ -240,7 +253,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="/Frontend/CSS/css-insert.html">Insertar CSS</a></li>
-                                <li><a class="dropdown-item" href="/Frontend/CSS/css-reference.html">Referencias a HTML</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/CSS/css-reference.html">Referencias a
+                                        HTML</a></li>
                                 <li><a class="dropdown-item" href="/Frontend/CSS/css-attrib.html">Atributos</a></li>
                             </ul>
                         </li>
@@ -255,8 +269,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="/Frontend/Javascript/js-notions.html">Nociones Basicas <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    <a class="dropdown-item" href="/Frontend/Javascript/js-notions.html">Nociones
+                                        Basicas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                             <path
                                                 d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
@@ -271,8 +285,9 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/Frontend/Javascript/js-communication.html">Comunicación JavaScript - Python <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    <a class="dropdown-item"
+                                        href="/Frontend/Javascript/js-communication.html">Comunicación JavaScript -
+                                        Python <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                                             <path
                                                 d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
@@ -308,8 +323,10 @@
                                 Optimizar tu computadora
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/extra/optim-windows.html">Alternativa 1 - Optimizar Windows</a></li>
-                                <li><a class="dropdown-item" href="/Frontend/extra/optim-linux.html">Alternativa 2 - Instalación de Linux</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/extra/optim-windows.html">Alternativa 1 -
+                                        Optimizar Windows</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/extra/optim-linux.html">Alternativa 2 -
+                                        Instalación de Linux</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -332,29 +349,163 @@
         </div>
     </nav>
 
-    <div class="div-central container">
+    <div class="background-page">
 
+    </div>
+
+    <div class="div-central container scrollspy-example" data-spy="scroll" data-target="#list-example">
         <div class="div-master">
-            <h1 >Nociones Basicas</h1>
-            En la programación es de suma importancia aprender a identificar la información necesaria de un problema para poder partir
-            y llegar a la respectiva solución, por lo tanto deberá comenzar a aprender algunos conceptos básicos. Puede guiarse con la siguiente información: <br/>
-            <br/>
-            - Analizar y comprender el problema que se le plantea.<br/>
-            - Es importante dividir el problema en problemas más pequeños ya que esto le permitirá resolverlos con mayor eficiencia. A esto se le llama metodología TOP-DOWN.<br/>
-            - De acuerdo a lo comprendido y la información necesaria obtenida del problema debe diseñar un algoritmo que le permita avanzar adecuadamente en la realización del proyecto.<br/>
-            - Se debe preguntar que es lo que necesita hacer en el programa y que herramientas debe utilizar, esto debido a la necesidad del cliente o entidad empresarial, ya que cada proyecto puede ser realizado con diferentes paradigmas de programación y por lo tanto debe elegir un lenguaje de programación adecuado a las necesidades o los frameworks adecuados si trabajará en desarrollo web.<br/><br/>
-            <h4 >Elementos básicos de un programa</h4>
-            Es muy importante que entienda cuales son los elementos básicos de un programa.<br/><br/>
-            -Variables. <br/>
-            -Constantes. <br/>
-            -Expresiones. <br/>
-            -Caracteres especiales. <br/>
-            -Identificadores. <br/>
-            -Palabras reservadas. <br/>
-            -Bucles. <br/>
-            -Contadores. <br/>
-            -Estructuras: secuenciales, selectivas y repetitivas. <br/>
+            <div class="row">
+                <!--Sección de minidefiniciones-->
+                <div class="col-3">
+                    Veamos este error
+                    quepasaDX at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
+                    vel
+                    nisi.
+                    Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                    volutpat. Aenean
+                    sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat. Cras
+                    mattis
+                    vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                    viverra sit amet.
+                    Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis ligula,
+                    vel luctus
+                    diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus in
+                    scelerisque
+                    ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                </div>
+
+                <div class="col-9">
+
+                    <h4 id="algoritmo-list">Algoritmos</h4>
+                    <p>
+                        quepasaDX at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus
+                        eget
+                        vel
+                        nisi.
+                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                        volutpat. Aenean
+                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
+                        Cras
+                        mattis
+                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                        viverra sit amet.
+                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
+                        ligula,
+                        vel luctus
+                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
+                        in
+                        scelerisque
+                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    </p>
+                    <h4 id="var-list">Variables y costantes</h4>
+                    <p>
+                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
+                        vel
+                        nisi.
+                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                        volutpat. Aenean
+                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
+                        Cras
+                        mattis
+                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                        viverra sit amet.
+                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
+                        ligula,
+                        vel luctus
+                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
+                        in
+                        scelerisque
+                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    </p>
+                    <h4 id="ctrl-list">Estructuras de control</h4>
+                    <p>
+                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
+                        vel
+                        nisi.
+                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                        volutpat. Aenean
+                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
+                        Cras
+                        mattis
+                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                        viverra sit amet.
+                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
+                        ligula,
+                        vel luctus
+                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
+                        in
+                        scelerisque
+                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    </p>
+                    <h4 id="met-list">Metodos y funciones</h4>
+                    <p>
+                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
+                        vel
+                        nisi.
+                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                        volutpat. Aenean
+                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
+                        Cras
+                        mattis
+                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                        viverra sit amet.
+                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
+                        ligula,
+                        vel luctus
+                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
+                        in
+                        scelerisque
+                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    </p>
+                    <h4 id="comentarios-list">Comentarios</h4>
+                    <p>
+                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
+                        vel
+                        nisi.
+                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                        volutpat. Aenean
+                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
+                        Cras
+                        mattis
+                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                        viverra sit amet.
+                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
+                        ligula,
+                        vel luctus
+                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
+                        in
+                        scelerisque
+                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    </p>
+                    <h4 id="api-list">Api de Java</h4>
+                    <p>
+                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
+                        vel
+                        nisi.
+                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
+                        volutpat. Aenean
+                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
+                        Cras
+                        mattis
+                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
+                        viverra sit amet.
+                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
+                        ligula,
+                        vel luctus
+                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
+                        in
+                        scelerisque
+                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    </p>
+
+
+                </div>
+            </div>
+
+
         </div>
+
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

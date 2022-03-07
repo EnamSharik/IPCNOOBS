@@ -1,33 +1,24 @@
-/*html {
-    background-color:#14498f;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-}*/
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
-
-body {
-    background: url("img/back.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
-}
-
 .div-central {
-    width: 700px;
-    height: 700px;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); 
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.322); 
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    background: inherit;
+    
     overflow: auto;
 }
 
-
+.background-page{
+    background: url("img/back.jpg");
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    filter: blur(5px);
+}
   
 .div-central:before {
     content: "";
