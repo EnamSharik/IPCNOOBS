@@ -37,8 +37,12 @@ body{
     filter: blur(7px);
 }
 
+.div-aclaraciones {
+  padding-top: 9%;
+}
+
 .div-master{
-    padding-top: 15%;
+    padding-top: 4%;
     color: #ffffff;
 }
 
