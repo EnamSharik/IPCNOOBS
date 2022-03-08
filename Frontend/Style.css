@@ -11,7 +11,6 @@ body{
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    
     overflow: auto;
 }
 
@@ -49,8 +48,8 @@ body{
 .dropdown-menu li {
     position: relative;
   }
-  .dropdown-menu .dropdown-submenu {
-    display: none;
+  .dropdown-menu  .dropdown-submenu {
+    display:none;
     position: absolute;
     left: 100%;
     top: -7px;
@@ -60,7 +59,7 @@ body{
     left: auto;
   }
   .dropdown-menu > li:hover > .dropdown-submenu {
-    display: block;
+    display:block;
   }
 
   .stater-template{

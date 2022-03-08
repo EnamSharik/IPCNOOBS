@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <LINK REL=StyleSheet HREF="/Frontend/Style.css">
     <link rel="icon" href="/Frontend/img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -25,6 +27,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="/Frontend/index.html">IPCNOOBS</a>
+
+
 
             <!-- Menú Lateral -->
             <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
@@ -47,7 +51,7 @@
                                 </svg> Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-filetype-java" viewBox="0 0 16 16">
@@ -56,11 +60,15 @@
                                 </svg> Java
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html">Instalación</a>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html"
+                                        data-bs-toggle="tooltip" data-bs-placement="right"
+                                        title="¿Como instalar Java?">Instalación</a>
                                 </li>
-                                <li><a class="dropdown-item" href="/Frontend/Java/java-ides.html">IDES</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-ides.html"
+                                        data-bs-toggle="tooltip" data-bs-placement="right"
+                                        title="Nuestras recomendaciones de IDES">IDES</a></li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-menu dropdown-menu-dark dropdown-item">
                                         Programación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                             <path
@@ -69,70 +77,24 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html">Nociones
-                                                Basicas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg> </a>
-                                            <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                                <li>
-                                                    <a class="dropdown-item list-group-item list-group-item-action"
-                                                        href="#Algoritmo-JavaNotions-list">Algoritmos</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item list-group-item list-group-item-action"
-                                                        href="#Var&Cons-JavaNotions-list">Variables y constantes</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item list-group-item list-group-item-action"
-                                                        href="#EdC-JavaNotions-list">Estructuras de control</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item list-group-item list-group-item-action"
-                                                        href="#MyF-JavaNotions-list">Metodos y funciones</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item list-group-item list-group-item-action"
-                                                        href="#Comentarios-JavaNotions-list">Comentarios</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item list-group-item list-group-item-action"
-                                                        href="#Api-JavaNotions-list">Api de java</a>
-                                                </li>
-                                            </ul>
+                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html"
+                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Algoritmos &#013Variables y constantes &#013Estructuras de control &#013Metodos y funciones &#013Comentarios &#013Api de Java">Nociones
+                                                Basicas
+                                            </a>
+
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-class.html">Clases <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg> </a>
-                                            <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
-                                                </li>
-                                            </ul>
+                                            <a class="dropdown-item" href="/Frontend/Java/java-class.html"
+                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Estructura paquetes y clases &#013Math &#013Scanner &#013Files &#013Gson">Clases</a>
+
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-poo.html">POO <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg> </a>
-                                            <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
-                                                </li>
-                                            </ul>
+                                            <a class="dropdown-item" href="/Frontend/Java/java-poo.html"
+                                                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="right"
+                                                title="Objetos &#013Herencia &#013Polimorfismo &#013Abstracción &#013Encapsulamiento">POO</a>
+
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="">Java Swing <svg
@@ -429,99 +391,99 @@
                     </p>
                     <h4 id="MyF-JavaNotions-list">Metodos y funciones</h4>
                     <p>
-                        <div class="form-group">
-                            <h5> ¿Qué es una función?</h5>
-                            <label>Las funciones son diseñadas para realizar tareas específicas: toman una lista de valores
-                                llamados argumento y devuelven un único valor.</p></label>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <h5 class="text-white bg-dark">FUNCIONES EN JAVA</h5>
-                            <h5>Declaración de funciones: </h5>
-                            <label>Una función como tal sub-algoritmo o sub-programa tiene una constitución similar a los
-                                algoritmos, por consiguiente, constará de una cabecera que comenzará con el tipo del valor
-                                devuelto por la función, seguido de la palabra función y del nombre y argumentos de dicha
-                                función.</p></label>
-                            <img src="/Frontend/img/Funcion_1.png" class="img-fluid" alt="...">
-                            <p>>La sentencia devolver (return) termina inmediatamente la función en la cual se ejecuta.</p>
-    
-                            <h5>Invocación a las funciones: </h5>
-                            <label>Cada vez que se llama a una función desde el algoritmo principal se establece
-                                automáticamente una correspondencia entre los parámetros formales y los parámetros actuales.
-                                Debe haber exactamente el mismo número de parámetros actuales que de parámetros formales en
-                                la declaración de la función y se presupone una correspondencia uno a uno de izquierda a
-                                derecha entre los parámetros formales y los actuales. Una función puede ser llamada de la
-                                forma siguiente:</p></label>
-                            <img src="/Frontend/img/LLamado_Funcion_1.png" class="img-fluid" alt="...">
-    
-                            <h5 class="text-white bg-dark">METODOS EN JAVA</h5>
-                            <label>Los métodos son subrutinas que manipulan los datos definidos por la clase y, en muchos
-                                casos, brindan acceso a esos datos. En la mayoría de los casos, otras partes de tu programa
-                                interactuarán con una clase a través de sus métodos.</p></label>
-                            <h5>¿Cómo se escribe un método?</h5>
-                            <label>Un método tendrá paréntesis después de su nombre. Por ejemplo, si el nombre de un método
-                                es carro, mensaje, comida, etc. Se escribirá mensaje (), carro (), comida (), cuando su
-                                nombre se usa en una sentencia. Esta notación lo ayudará a distinguir los nombres de las
-                                variables de los nombres de los métodos.</p>La forma general de un método se muestra a
-                                continuación:</p></label>
-                            <img src="/Frontend/img/Metodo_1.png" alt="...">
-                            <label>• Aquí, tipo-retorno especifica el tipo de datos devueltos por el método. Puede ser
-                                cualquier tipo válido, incluidos los tipos de clase que cree. Si el método no devuelve un
-                                valor, su tipo de devolución debe ser void.</p>• El nombre del método se especifica por
-                                nombre. Puede ser cualquier identificador legal que no sea el que ya utilizan otros
-                                elementos dentro del alcance actual.</p>
-                                </p>• La lista de parámetros es una secuencia de tipos e identificadores separados por
-                                comas. Los parámetros son esencialmente variables que reciben el valor de los argumentos
-                                pasados al método cuando se llama. Si el método no tiene parámetros, la lista de parámetros
-                                estará vacía.</label>
-                            <h5>LLamado del método a la clase principal:</h5>
-                            <img src="/Frontend/img/LLamado_M%C3%A9todo_1.png" alt="...">
-                            <h2>Otro tipo de método muy comun en la programación es la siguiente:</h2>
-                            <img src="/Frontend/img/Metodo_2.png" alt="...">
-    
-                            <h5>Ejemplo de un programa utilizando metodos y funciones:</h5>
-                            <label>Este ejercicio concistio en crear funciones las cuales contendran operaciones suma, resta
-                                y multiplicación. Se creeara un método donde se ejecutaran e imprimiran los resultados de
-                                dichas funciones.</p></label>
-                            <img src="/Frontend/img/Ejercicio_M%C3%A9todo_Funci%C3%B3n.png" class="img-fluid" alt="...">
-    
-                        </div>
-                        <br>
+                    <div class="form-group">
+                        <h5> ¿Qué es una función?</h5>
+                        <label>Las funciones son diseñadas para realizar tareas específicas: toman una lista de valores
+                            llamados argumento y devuelven un único valor.</p></label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <h5 class="text-white bg-dark">FUNCIONES EN JAVA</h5>
+                        <h5>Declaración de funciones: </h5>
+                        <label>Una función como tal sub-algoritmo o sub-programa tiene una constitución similar a los
+                            algoritmos, por consiguiente, constará de una cabecera que comenzará con el tipo del valor
+                            devuelto por la función, seguido de la palabra función y del nombre y argumentos de dicha
+                            función.</p></label>
+                        <img src="/Frontend/img/Funcion_1.png" class="img-fluid" alt="...">
+                        <p>>La sentencia devolver (return) termina inmediatamente la función en la cual se ejecuta.</p>
+
+                        <h5>Invocación a las funciones: </h5>
+                        <label>Cada vez que se llama a una función desde el algoritmo principal se establece
+                            automáticamente una correspondencia entre los parámetros formales y los parámetros actuales.
+                            Debe haber exactamente el mismo número de parámetros actuales que de parámetros formales en
+                            la declaración de la función y se presupone una correspondencia uno a uno de izquierda a
+                            derecha entre los parámetros formales y los actuales. Una función puede ser llamada de la
+                            forma siguiente:</p></label>
+                        <img src="/Frontend/img/LLamado_Funcion_1.png" class="img-fluid" alt="...">
+
+                        <h5 class="text-white bg-dark">METODOS EN JAVA</h5>
+                        <label>Los métodos son subrutinas que manipulan los datos definidos por la clase y, en muchos
+                            casos, brindan acceso a esos datos. En la mayoría de los casos, otras partes de tu programa
+                            interactuarán con una clase a través de sus métodos.</p></label>
+                        <h5>¿Cómo se escribe un método?</h5>
+                        <label>Un método tendrá paréntesis después de su nombre. Por ejemplo, si el nombre de un método
+                            es carro, mensaje, comida, etc. Se escribirá mensaje (), carro (), comida (), cuando su
+                            nombre se usa en una sentencia. Esta notación lo ayudará a distinguir los nombres de las
+                            variables de los nombres de los métodos.</p>La forma general de un método se muestra a
+                            continuación:</p></label>
+                        <img src="/Frontend/img/Metodo_1.png" alt="...">
+                        <label>• Aquí, tipo-retorno especifica el tipo de datos devueltos por el método. Puede ser
+                            cualquier tipo válido, incluidos los tipos de clase que cree. Si el método no devuelve un
+                            valor, su tipo de devolución debe ser void.</p>• El nombre del método se especifica por
+                            nombre. Puede ser cualquier identificador legal que no sea el que ya utilizan otros
+                            elementos dentro del alcance actual.</p>
+                            </p>• La lista de parámetros es una secuencia de tipos e identificadores separados por
+                            comas. Los parámetros son esencialmente variables que reciben el valor de los argumentos
+                            pasados al método cuando se llama. Si el método no tiene parámetros, la lista de parámetros
+                            estará vacía.</label>
+                        <h5>LLamado del método a la clase principal:</h5>
+                        <img src="/Frontend/img/LLamado_M%C3%A9todo_1.png" alt="...">
+                        <h2>Otro tipo de método muy comun en la programación es la siguiente:</h2>
+                        <img src="/Frontend/img/Metodo_2.png" alt="...">
+
+                        <h5>Ejemplo de un programa utilizando metodos y funciones:</h5>
+                        <label>Este ejercicio concistio en crear funciones las cuales contendran operaciones suma, resta
+                            y multiplicación. Se creeara un método donde se ejecutaran e imprimiran los resultados de
+                            dichas funciones.</p></label>
+                        <img src="/Frontend/img/Ejercicio_M%C3%A9todo_Funci%C3%B3n.png" class="img-fluid" alt="...">
+
+                    </div>
+                    <br>
                     </p>
                     <h4 id="Comentarios-JavaNotions-list">Comentarios</h4>
                     <p>
-                        <div class="form-group">
-                            <h5> ¿Qué es un comentario?</h5>
-                            <label>Conocido también como documentación interna es la que se acompaña en el código o programa
-                                fuente y se realiza a base de comentarios significativos. <p>Estos comentarios se
-                                    representan con diferentes notaciones, según el tipo de lenguaje de programación: </p>
-                            </label>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <h5 class="text-white bg-dark">TIPOS DE COMENTARIOS</h5>
-                            <h5>Visual Basic 6 / VB .NET</h5>
-                            <label>1. Los comentarios utilizan un apóstrofe simple y el compilador ignora todo lo que viene
-                                después de ese carácter.</p></label>
-                            <img src="/Frontend/img/Comentario_VB.png" class="img-fluid" alt="...">
-    
-                            <h5>C/C++ y C#</h5>
-                            <label>Existen dos formatos de comentarios en los lenguajes C/C# y C++:</p>1. Comentarios de una
-                                línea (comienzan con el carácter //)</p>2. Comentarios multilínea (comienzan con los
-                                caracteres /* y terminan con los caracteres */, todo lo encerrado entre ambos juegos de
-                                caracteres son comentarios)</p></label>
-                            <img src="/Frontend/img/Comentario_C.png" class="img-fluid" alt="...">
-    
-                            <h5>Java</h5>
-                            <label>Existen 3 forma de cometar en Java, la que es por documentación, una sola linea y
-                                multilinea:</p>1. Comentarios por documentación de clases: Esta parte es donde va el nombre
-                                del autor (@author Name) del programa en java.</p>2. Comentarios de una sola línea: Es para
-                                documentar dentro del código.</p>3. Comentarios por multilínea: Sirve para documentar textos
-                                o instrucciones dentro del código.</p></label>
-                            <img src="/Frontend/img/Comentario_Java.png" class="img-fluid" alt="...">
-    
-                        </div>
-                        <br>
+                    <div class="form-group">
+                        <h5> ¿Qué es un comentario?</h5>
+                        <label>Conocido también como documentación interna es la que se acompaña en el código o programa
+                            fuente y se realiza a base de comentarios significativos. <p>Estos comentarios se
+                                representan con diferentes notaciones, según el tipo de lenguaje de programación: </p>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <h5 class="text-white bg-dark">TIPOS DE COMENTARIOS</h5>
+                        <h5>Visual Basic 6 / VB .NET</h5>
+                        <label>1. Los comentarios utilizan un apóstrofe simple y el compilador ignora todo lo que viene
+                            después de ese carácter.</p></label>
+                        <img src="/Frontend/img/Comentario_VB.png" class="img-fluid" alt="...">
+
+                        <h5>C/C++ y C#</h5>
+                        <label>Existen dos formatos de comentarios en los lenguajes C/C# y C++:</p>1. Comentarios de una
+                            línea (comienzan con el carácter //)</p>2. Comentarios multilínea (comienzan con los
+                            caracteres /* y terminan con los caracteres */, todo lo encerrado entre ambos juegos de
+                            caracteres son comentarios)</p></label>
+                        <img src="/Frontend/img/Comentario_C.png" class="img-fluid" alt="...">
+
+                        <h5>Java</h5>
+                        <label>Existen 3 forma de cometar en Java, la que es por documentación, una sola linea y
+                            multilinea:</p>1. Comentarios por documentación de clases: Esta parte es donde va el nombre
+                            del autor (@author Name) del programa en java.</p>2. Comentarios de una sola línea: Es para
+                            documentar dentro del código.</p>3. Comentarios por multilínea: Sirve para documentar textos
+                            o instrucciones dentro del código.</p></label>
+                        <img src="/Frontend/img/Comentario_Java.png" class="img-fluid" alt="...">
+
+                    </div>
+                    <br>
                     </p>
                     <h4 id="Api-JavaNotions-list">Api de Java</h4>
                     <p>
@@ -554,7 +516,7 @@
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script src="../script.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
