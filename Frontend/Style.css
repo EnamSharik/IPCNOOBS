@@ -101,3 +101,7 @@ body{
   #imgProvocaScroll {
     overflow-x: hidden;
   }
+
+  #exp-de-codigo {
+    font-size: 14px;
+  }
