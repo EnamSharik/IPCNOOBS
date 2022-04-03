@@ -314,6 +314,17 @@
                             </p>
                         </div>
                     </div>
+                    <br>
+                    <div class="card text-dark opacity-75" style="width: 18rem;">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">Jar</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Definición</h6>
+                            <p class="card-text text-dark">
+                                Un jar es un tipo de archivo ejecutable que permite ejecutar
+                                tanto aplicaciones como herramientas escritas en lenguaje Java
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-9">
@@ -451,32 +462,58 @@
 
                     </p>
 
-                    <h4 id="Gson-class-list">CLASE GSON</h4>
+                    <h4 id="Gson-class-list">CLASE SIMPLE JSON</h4>
                     <p>
-                        GSON es una libreria de Google que se encarga de convertir objetos Java a objetos Json, esto lo
+                        Simple Json es una libreria que se encarga de convertir objetos Java a objetos Json, esto lo
                         realiza generando
                         un archivo que posee un formato especifico; puedes ver el formato en las tarjetas de definición
-                        hasta arriba.
+                        scrolleando hasta arriba.
 
                         Esta libreria no es propia de Java, por lo cual no viene por defecto en el paquete de Java, por
-                        lo cual, para poder
-                        utilizar la librería debemos investigar y realizar los siguentes pasos:
+                        lo cual, para poder utilizar la librería debemos investigar y realizar los siguentes pasos:
 
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="">
                         <label class="form-check-label" for="defaultCheck1">
-                            Descargar Gson
+                            Descargar Simple Json Jar
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="">
                         <label class="form-check-label" for="defaultCheck1">
-                            ¿Como instalar librerías externas en el IDE que hayas elegido?
+                            ¿Como instalar jar externos en el IDE que hayas elegido?
                         </label>
                     </div>
                     <br>
                     <br>
-                    Una vez tengas hecho lo anterior, veamos como usarlo.
+                    Una vez tengas hecho lo anterior, veamos como usarlo:
+                    <img src="/Frontend/img/JsonSimple.png" class="img-fluid">
+                    Analizar este codigo es la oportunidad perfecta de entender un poco 
+                    la programación orientada a objetos:<br>
+                    <br>
+                    La variable jsonData contiene toda la información que el archivo json tiene. Y es de tipo 
+                    String, podemos pensar la variable jsonData como si fuese una hoja fisica con la información
+                    que necesitamos.<br><br>
+                    El objeto trad, es un traductor, podemos imaginar que este traductor es una maquina
+                    que se encarga de leer el documento anterior y convirte su contenido en un objeto fisico con las
+                    descripciones que obtuvo leyendo el documento. <br><br>
+                    El objeto array es un listado de objetos que podemos imaginar como una estantería, en la cual
+                    almacenar nuestra colección de objetos que convertimos con nuestro traductor. 
+                    <br><br>
+                    La clase Persona utilizada para este ejemplo es la siguiente:
+                    <img src="/Frontend/img/Clase_Persona.png" class="img-fluid">
+                    Observa el constructor de la clase Persona y también observa como utilizamos 
+                    ese constructor dentro del ejemplo de Json Simple, se encuentra hasta abajo de la imagen.<br>
+                    
+                    Adémas, el array Clientes[] es simplemente un array de tipo Persona. Cuando 
+                    creas una clase en java, puedes utilizarla como si fuera un tipo de dato tanto en 
+                    arrays, como en funciones.
+                    
+                    <br>
+                    <br>
+                    El modelo de Json utilizado para este ejemplo es el siguiente:
+                    <img src="/Frontend/img/json_example_for_jsonSimple.png" class="img-fluid w-75">
+
                     </p>
 
                 </div>
