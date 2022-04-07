@@ -227,39 +227,109 @@
             <div class="row">
                 <!--Sección de minidefiniciones-->
                 <div class="col-3 div-aclaraciones">
-                    Veamos este error
-                    quepasaDX at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
-                    vel
-                    nisi.
-                    Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                    volutpat. Aenean
-                    sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat. Cras
-                    mattis
-                    vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                    viverra sit amet.
-                    Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis ligula,
-                    vel luctus
-                    diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus in
-                    scelerisque
-                    ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    <div class="card text-dark opacity-75">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">Constantes</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Standares</h6>
+                            <p class="card-text text-dark">
+                                En Java, las constantes se escriben utilizando todas las letras mayusculas<br>
+                                
+                                <b>Ejemplo</b><br>
+                                EXIT_ON_CLOSE
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-9">
                     <div class="stater-template">
                         <h1>Componentes Java Swing</h1>
-                        <p class="lead">Interfaces graficas por medio de Java
-                            Teoria y algunos componentes
+                        <p class="lead">Interfaces graficas por medio de Java,
+                            teoria y algunos componentes
                         </p>                        
                     </div>
-                    HOLA MUNDO
+                    <div>
+                        <h4>Introducción</h4>
+                        Java soporta las interfaces gráficas por medio de la librería awt (Abstract Window Toolkit)
+                        Nos centraremos en Swing.
+                        <br>
+                        <br>
+                        <h4>JFrame</h4>
+                        Lo primero que debemos saber es como abrir una ventana, para ello existen dos metodos que varían 
+                        en función de como prefieras trabajar pero de ambas maneras, debes importar la clase JFrame (import javax.util.swing.JFrame;)
+                        una vez importado, veamos como se utiliza:
+                        <br><br>
+                        <h5>JFrame en una clase</h5>
+                        Para esto heredamos de la clase JFrame de la siguiente manera: 
+                        <img src="../img/[Java_Components]Frame_Extends.png" class="img-fluid">
+                        Dentro de la clase creada, insertamos un constructor que contendrá los siguientes metodos:
+                        <div class="row" style="padding: 20px;">
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75" >
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setVisible(boolean)</h5>                                        
+                                        <p class="card-text text-dark">
+                                            Define si la ventana es visible o no
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card text-dark opacity-75" >
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setSize(int, int)</h5>                                        
+                                        <p class="card-text text-dark">
+                                            Tamaño en pixeles de de la ventana
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card text-dark opacity-75" >
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setTitle(String)</h5>                                        
+                                        <p class="card-text text-dark">
+                                            Titulo de la ventana
+                                        </p>
+                                    </div>
+                                </div>
 
-
-
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75" >
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setDefaultCloseOperation(int)</h5>                                        
+                                        <p class="card-text text-dark">
+                                            Recibe un entero que define como reaccionará la ventana cuando
+                                            presionas el boton de salir. 
+                                            <ul>
+                                                <li><b>DISPOSE_ON_CLOSE:</b> Cierra la ventana actual</li>
+                                                <li><b>EXIT_ON_CLOSE:</b> Finaliza la aplicación y cierra la ventana</li>
+                                                <li><b>DO_NOTHING_ON_CLOSE:</b> Cancela la función de cerrar ventana</li>
+                                                <li><b>HIDE_ON_CLOSE:</b> Esconde la ventana</li>
+                                              </ul>
+                                        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        Se agregan estos metodos al constructor bajo la siguiente logica: el constructor es quien provee
+                        los parametros de inicializacion.
+                        <img src="../img/[Java_Components]Frame_Constructor.png" class="img-fluid">
+                        Luego de crear el constructor, basta con inicializar el objeto en la clase main y podrémos ver la ventana
+                        vacía.
+                        <br><br><br>
+                        <h4>JPanel</h4>
+                        Un panel puede representarse como una hoja sobre una mesa, donde la mesa es un JFrame.<br>
+                        Cuando escribimos sobre una hoja, esta está apoyada usualmente sobre una mesa. 
+                        <br><br>
+                        JPanel es un espacio redimensionable sobre el cual escribir y poner componentes, 
+                        se le pueden agregar propiedades como posición, color, tamaño, etc.
+                        <br>Puedes agregar todos los paneles que desees a tu JFrame<br>
+                        
+                        
+                    </div>
                 </div>
-
-
             </div>
-
         </div>
     </div>
 
