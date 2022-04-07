@@ -1,1 +1,299 @@
-que onda Hola mundo spaiderverse confirmado
+import math as ejemplo
+from math import cos
+import math
+import asyncio
+from ast import Del
+que onda Hola mundo paiderverse confirmado
+
+/////break
+numero = 0
+for numero in range(10):
+    if numero == 5:
+        break
+
+    print('El número es: ' + str(numero))
+
+print('fuera del bucle')
+
+/////continue
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)
+
+//pass
+
+
+def funcion(args):
+    pass
+
+
+class ejemplo:
+    pass
+
+
+//return
+
+
+def func_return():
+    a = 10
+    return a
+
+
+def no_return():
+    a = 10
+
+
+print(func_return())
+print(no_return())
+
+//while
+i = 5
+while(i):
+    print(i)
+    i = i – 1
+
+
+//with
+with open('ejemplo.txt', 'w') as my_file:
+    my_file.write('Hola Mundo!')
+
+//yield
+
+
+def generador():
+    for i in range(6):
+        yield i*i
+
+
+g = generador()
+for i in g:
+    print(i)
+//al ejecutar
+0
+1
+4
+9
+16
+25
+
+//Try, except y raise
+
+
+def prueba(numero):
+    try:
+        r = 1/numero
+    except:
+        print('Excepcción')
+        return
+    return r
+
+
+print(prueba(10))
+print(prueba(0))
+
+//assert
+# Funcion suma de variables enteras
+
+
+def suma(a, b):
+    assert(type(a) == int)
+    assert(type(b) == int)
+    return a+b
+
+
+# Error, ya que las variables no son int
+suma(3.0, 5.0)
+
+# Ok, los argumentos son int
+suma(3, 5)
+
+// asyncio
+
+
+async def main():
+    print('Hola')
+    await asyncio.sleep(1)
+    print('mundo')
+
+asyncio.run(main())
+
+
+//for
+nombres = ['Rafael', 'Brandon', 'Eduardo', 'Kevin', 'Daniel']
+for i in nombres:
+    print('Hola '+i)
+
+Hola Rafael
+Hola Brandon
+Hola Eduardo
+Hola Kevin
+Hola Daniel
+
+//import y from_import
+// Podemos usar, la función cos() sin la necesidad de escribir math.cos()
+
+
+//global
+dato = "17"
+
+
+def update_dato():
+    global dato
+    dato = "12"
+
+
+update_dato()
+print(dato)
+// imprimirá =
+
+//def
+def saludar(hola):
+
+
+hola = "Hola " + hola   # s en la tabla local de símbolos es reasignada
+print(hola)
+persona = "Bob"
+saludar(persona)
+hola Bob
+# la variable persona utilizada en la llamada continua vinculada al objeto original, 'Bob'.
+persona
+'Bob'
+
+//Del
+a = ['x', 'y', 'z']
+del a[1]
+a
+//al ejecutar = ['x', 'z']
+
+//if, elif
+
+
+def ejemplo(a):
+    if a == 1:
+        print('Uno')
+    elif a == 2:
+        print('Dos')
+    else:
+        print('Algo mas')
+
+
+if_example(2)
+if_example(4)
+if_example(1)
+// Al imprimir:
+Dos
+Algo mas
+Uno
+
+
+// in
+a = [1, 2, 3, 4, 5]
+5 in a
+True // al ejecutar imprimirá True ya que 5 pertenece en a
+10 in a
+False // al ejecutar imprimirá False ya que 10 no pertenece en a
+
+
+//lambda
+def a(x): return x*2
+
+
+for i in range(1, 6):
+    print(a(i))
+//al ejecutar:
+2
+4
+6
+8
+10
+
+
+//nonlocal
+
+
+def otra_funcion():
+    a = 5
+
+    def funcion_interna():
+        nonlocal a
+        a = 10
+        print("Función interna: ", a)
+    funcion_interna()
+    print("Otra función: ", a)
+
+
+//al ejecutar:
+Función interior: 10
+Función exterior: 10
+
+
+//class
+
+
+class Ejemplo:
+    def funcion_1(parametros1):
+        …
+
+    def funcion_2(parametros2):
+        …
+
+
+//finally
+try:
+    [algoritmo principal]
+except [nombre de la excepción 1]:
+    [algoritmo alternativo 1]
+except [nombre de la excepción 2]:
+    [algoritmo alternativo 2]
+except [nombre de la excepción 3]:
+    [algoritmo alternativo 3]
+finally:
+    [algoritmo que siempre se ejecuta]
+
+
+//true, False
+1 == 1
+//imprimira True
+5 > 3
+//imprimira True
+True or False
+//imprimira True
+10 <= 1
+//imprimira False
+3 > 7
+//imprimira False
+True and False
+//imprimira False
+
+//NONEEEEEE
+None == 0
+//imprimira False
+None == []
+//imprimira False
+None == False
+//imprimira False
+x = None
+y = None
+x == y
+//imprimira True
+
+//as
+ejemplo.cos(ejemplo.pi)
+-1.0
+
+// and
+True and False
+//Al ejecutar False
+True or False
+//Al ejecutar True
+not False
+//Al ejecutar True
+
+// is
+True is True
+//Al ejecutar True
+False is False
+//Al ejecutar True
+None is None
+//Al ejecutar True
