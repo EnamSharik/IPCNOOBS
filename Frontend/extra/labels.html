@@ -341,21 +341,22 @@
             <div class="row">
                 <!--Sección de minidefiniciones-->
                 <div class="col-3 div-aclaraciones">
-                    Veamos este error
-                    quepasaDX at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
-                    vel
-                    nisi.
-                    Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                    volutpat. Aenean
-                    sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat. Cras
-                    mattis
-                    vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                    viverra sit amet.
-                    Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis ligula,
-                    vel luctus
-                    diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus in
-                    scelerisque
-                    ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    <h5>Direcciones URL relativas vs Absolutas</h5>
+                    <label>
+                        Las direcciones URL son una parte muy importante dentro del codigo ya que nos permite acceder a
+                        diferentes carpetas o archivos sin importar el tipo que este sea.<br />
+                        Cada vez que utilicemos una ruta es importante identificar si necesitamos usar una relativa o
+                        una absoluta. La diferencia entre estas dos es que en la relativa se puede acceder desde
+                        cualquier lugar en el que se encuentren los archivos, es decir que no importa si tenemos el
+                        codigo dentro de una computadora o otra computadora, siempre que la ruta sea relativa nuestro
+                        codigo seguirá funcionando correctamente. <br />
+                        Ejemplo de ruta relativa:<br />
+                        <img src="/Frontend/img/POO_Clas.png" class="img-fluid" alt="..."><br />
+                        Ejemplo de ruta absoluta:<br />
+                        <img src="/Frontend/img/POO_Clas.png" class="img-fluid" alt="...">
+
+
+                    </label>
                 </div>
 
                 <div class="col-9">
@@ -397,25 +398,27 @@
                             <label>Permite indicar el nombre de la clase del elemento. </p></label><br />
                             <h4>• style</h4>
                             <label>Se usa para especificar el estilo (inline) para el elemento.
-                            </p></label><br />
+                                </p></label><br />
                             <h4>• title</h4>
                             <label>Hace posible escribir información adicional sobre el elemento. </p></label><br />
                             <h4>• dir</h4>
-                            <label>Permite especificar la dirección para el contenido en el elemento (el valor puede ser rtl o ltr). </p></label><br />
+                            <label>Permite especificar la dirección para el contenido en el elemento (el valor puede ser
+                                rtl o ltr). </p></label><br />
                             <h4>• lang</h4>
                             <label>Se utiliza para especificar el código del lenguaje para el
                                 contenido del elemento. Para español se usa lang=”es-ES”. </p></label><br />
                             <h4>• xml:lang</h4>
                             <label> Permite definir el código de lenguaje para elementos (en
                                 XHTML). El ejemplo para español es: xml:lang=”es”.
-                                 </p></label><br />
+                                </p></label><br />
                             <h4>• charset</h4>
                             <label> Permite especificar la codificación de caracteres del
                                 documento al que se hace referencia. Por lo general se utiliza UTF-8
                                 (para unicode) o ISO-8859-1 (para alfabeto latino). </p></label><br />
                             <h4>• media</h4>
                             <label> Para especificar el tipo de dispositivo de salida. Su valor
-                                puede ser screen, tty, tv, projection, handheld, print, braille, aural, all. </p></label><br />
+                                puede ser screen, tty, tv, projection, handheld, print, braille, aural, all. </p>
+                            </label><br />
                             <h4>• accesskey</h4>
                             <label> Tecla de acceso rápido. </p></label><br />
                             <h3>• href</h3>
@@ -451,74 +454,39 @@
                             instancias para crear un objeto.</p>
                         <img src="/Frontend/img/POO_instanci.png" class="img-fluid" alt="...">
 
-                        <h2 class="text-white bg-dark">Pilares del POO</h2>
-                        <label>En la programación orientada a objetos existen 4 pilares los cuales
-                            son: Abstracción, Encapsulamiento, Polimorfismo y Herencia.
+                        <h2 class="text-white bg-dark">Eventos</h2>
+                        <label>Es la posibilidad de interactuar por parte del usuario o por parte del propio documento.
+                            Cuando un evento ocurre, se ejecuta algún tipo de acción. Por lo general correrá un código
+                            de JavaScript que se define para dicho fin.
+                            Los eventos se pueden separar en básicamente cinco grupos, los cuales son: para documentos,
+                            imagenes, formularios, teclado y mouse.
                             </p></label>
-                        <h2>Abstracción</h2>
-                        <label>Es un proceso en el cual debemos interpretar y reconocer las
-                            características esebcuakes de un objeto, y por lo tanto ignorar lo que
-                            resulta no esencial. <br />
-                            • Definir las características especificas del objeto, las cuales hagan
-                            distinción de otros objetos.<br />
-                            • Se debe tomar en cuenta que es exactamente el objeto y que es lo que
-                            realiza, porque de esta manera se decide de una mejor manera la
-                            implementación del mismo.<br />
-                            • Se hace énfasis en el qué hace el objeto en vez de en el cómo lo
-                            hace.<br />
-                            </p></label><br />
-                        <img src="/Frontend/img/Abstracción_Ejempl.png" alt="...">
+                        <h2>Eventos del documento</h2>
+                        <h4>• onload</h4>
+                        <label>Ocurre cuando termina de cargar el documento.</p></label><br />
+                        <h4>• onunload</h4>
+                        <label>Se trata de un evento que ocurre cuando el documento es quitado de la ventana por parte
+                            del usuario.</p></label><br />
+                        <h2>Eventos para imagen</h2>
+                        <h4>• onabort</h4>
+                        <label>Ocurre cuando la carga de la imagen es abortada.</p></label><br />
+                        <h2>Eventos para formularios</h2>
+                        <h4>• onselect</h4>
+                        <label>Este interesante evento ocurre cuando se selecciona el
+                        contenido del elemento o control correspondiente.</p></label><br />
+                        <h4>• onchange</h4>
+                        <label>Ocurre cuando el elemento del formulario cambia su valor.</p></label><br />
+                        <h4>• onfocus</h4>
+                        <label>Ocurre cuando el elemento recibe el foco.</p></label><br />
+                        <h4>• onblur</h4>
+                        <label>Ocurre cuando el elemento pierde el foco.</p></label><br />
+                        <h4>• onreset</h4>
+                        <label>Se produce cuando se resetea el formulario.</p></label><br />
+                        <h4>• onsubmit</h4>
+                        <label>Se produce cuando el formulario es enviado.</p></label><br />
 
-                        <h2>Encapsulamiento</h2>
-                        <label>Es una propiedad que nos permite ocultar la información de un objeto
-                            al mundo exterior. <br />
-                            • Se agrupan las características (atributos) del objeto con acceso
-                            privado y los comportamientos (métodos) con acceso público, dentro de
-                            una clase.<br />
-                            • Se accede o modifica los atributos o miembros de la clase por medio de
-                            sus métodos.<br /><br />
-                            Los tipos de acceso son:<br />
-                            • private: solamente la clase puede acceder a la propiedad o
-                            método.<br />
-                            • protected: las clases del mismo paquete y que heredan de la clase
-                            pueden acceder a la propiedad o método.<br />
-                            • public: la propiedad o método es accesible desde cualquier método de
-                            otra clase.<br />
-                            • package private (valor por defecto si no se indica ninguno de los
-                            anteriores): solo las clases en el mismo paquete pueden acceder a la
-                            propiedad o método.<br />
-                            </p></label><br />
-                        <img src="/Frontend/img/Encapsulamiento_Ejempo.png" alt="...">
-
-                        <h2>Herencia</h2>
-                        <label>Es una propiedad que permite crear clases a partir de otras ya
-                            existentes, obteniendo características (métodos y atributos) similares a
-                            los ya existentes.
-                            En otras palabras la nueva clase (subclase, clase derivada o también
-                            llamada clase hija) puede utilizar la misma implementación de su
-                            superclase (clase base o también llamada clase padre) o especificar una
-                            nueva implementación. <br />
-                            • Nos permite compartir automáticamente métodos y datos entre clases,
-                            subclases y objetos.<br />
-                            • Es un mecanismo que nos permite crear clases derivadas a partir de
-                            clases base.<br />
-                            </p></label><br />
-                        <img src="/Frontend/img/Herencia_Ejempl.png" alt="...">
-
-                        <h2>Polimorfismo</h2>
-                        <label>Son comportamientos diferentes, asociados a objetos distintos, pueden
-                            compartir el mismo nombre; al llamarlos por ese nombre se utilizará el
-                            comportamiento correspondiente al objeto que se esté usando. <br />
-                            Por ejemplo: si tenemos un método comunicar() en la clase Animal,
-                            sabemos que cada animal se comunica de diferente manera, entonces si
-                            tenemos un objeto perro y queremos llamar al método comunicar() y
-                            también creamos un objeto gato y llamamos al método comunicar(),
-                            estaremos utilizando dos veces el mismo método pero para diferentes
-                            objetos lo cual nos permite diferenciar la forma en que se comunica cada
-                            uno de los animales,
-                            ya que el perro dice "Guau!" y el gato "Miau!".<br />
-                            </p></label><br />
-
+                        <h2>Eventos del teclado</h2>
+                        <h2>Eventos del mouse</h2>
                     </div>
                 </div>
             </div>
