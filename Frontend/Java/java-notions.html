@@ -20,15 +20,13 @@
 
 
 <body>
-    <nav class="navbar navbar-dark  fixed-top list-group" id="list-example" style="background-color: #34495E;">
+    <nav class="navbar navbar-dark  fixed-top"  style="background-color: #34495E;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="/Frontend/index.html">IPCNOOBS</a>
-
-
 
             <!-- Menú Lateral -->
             <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
@@ -51,7 +49,7 @@
                                 </svg> Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-filetype-java" viewBox="0 0 16 16">
@@ -60,15 +58,10 @@
                                 </svg> Java
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html"
-                                        data-bs-toggle="tooltip" data-bs-placement="right"
-                                        title="¿Como instalar Java?">Instalación</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/Frontend/Java/java-ides.html"
-                                        data-bs-toggle="tooltip" data-bs-placement="right"
-                                        title="Nuestras recomendaciones de IDES">IDES</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-install.html">Instalación</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Java/java-ides.html">IDES</a></li>
                                 <li>
-                                    <a class="dropdown-menu dropdown-menu-dark dropdown-item">
+                                    <a class="dropdown-item" href="#">
                                         Programación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                             <path
@@ -77,24 +70,13 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html"
-                                                data-bs-toggle="tooltip" data-bs-placement="right"
-                                                title="Algoritmos &#013Variables y constantes &#013Estructuras de control &#013Metodos y funciones &#013Comentarios &#013Api de Java">Nociones
-                                                Basicas
-                                            </a>
-
+                                            <a class="dropdown-item" href="/Frontend/Java/java-notions.html">Nociones Basicas</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-class.html"
-                                                data-bs-toggle="tooltip" data-bs-placement="right"
-                                                title="Estructura paquetes y clases &#013Math &#013Scanner &#013Files &#013Gson">Clases</a>
-
+                                            <a class="dropdown-item" href="/Frontend/Java/java-class.html">Clases</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Java/java-poo.html"
-                                                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="right"
-                                                title="Objetos &#013Herencia &#013Polimorfismo &#013Abstracción &#013Encapsulamiento">POO</a>
-
+                                            <a class="dropdown-item" href="/Frontend/Java/java-poo.html">POO</a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="">Java Swing <svg
@@ -105,12 +87,10 @@
                                                 </svg> </a>
                                             <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
                                                 <li>
-                                                    <a class="dropdown-item"
-                                                        href="/Frontend/Java/java-swing-components.html">Componentes</a>
+                                                    <a class="dropdown-item" href="/Frontend/Java/java-swing-components.html">Componentes</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item"
-                                                        href="/Frontend/Java/java-swing-layouts.html">Layouts</a>
+                                                    <a class="dropdown-item" href="/Frontend/Java/java-swing-layouts.html">Layouts</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -129,10 +109,8 @@
                                 </svg> Python
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/Python/python-install.html">Instalación</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/Frontend/Python/python-ides.html">IDES y Editores de
-                                        texto</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Python/python-install.html">Instalación</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/Python/python-ides.html">IDES y Editores de texto</a></li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         Programación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -143,54 +121,13 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark dropend">
                                         <li>
-                                            <a class="dropdown-item"
-                                                href="/Frontend/Python/python-notions.html">Nociones Basicas <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg> </a>
-                                            <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
-                                                </li>
-                                            </ul>
+                                            <a class="dropdown-item" href="/Frontend/Python/python-notions.html">Nociones Basicas</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item"
-                                                href="/Frontend/Python/python-reservedwords.html">Palabras Reservadas
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg> </a>
-                                            <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
-                                                </li>
-                                            </ul>
+                                            <a class="dropdown-item" href="/Frontend/Python/python-reservedwords.html">Palabras Reservadas</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/Frontend/Python/python-flask.html">Flask
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg> </a>
-                                            <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Multi level 2</a>
-                                                </li>
-                                            </ul>
+                                            <a class="dropdown-item" href="/Frontend/Python/python-flask.html">Flask</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -215,8 +152,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="/Frontend/CSS/css-insert.html">Insertar CSS</a></li>
-                                <li><a class="dropdown-item" href="/Frontend/CSS/css-reference.html">Referencias a
-                                        HTML</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/CSS/css-reference.html">Referencias a HTML</a></li>
                                 <li><a class="dropdown-item" href="/Frontend/CSS/css-attrib.html">Atributos</a></li>
                             </ul>
                         </li>
@@ -231,37 +167,10 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="/Frontend/Javascript/js-notions.html">Nociones
-                                        Basicas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                        </svg> </a>
-                                    <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                        <li>
-                                            <a class="dropdown-item" href="#">Multi level 1</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Multi level 2</a>
-                                        </li>
-                                    </ul>
+                                    <a class="dropdown-item" href="/Frontend/Javascript/js-notions.html">Nociones Basicas</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item"
-                                        href="/Frontend/Javascript/js-communication.html">Comunicación JavaScript -
-                                        Python <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                        </svg> </a>
-                                    <ul class="dropdown-menu dropdown-submenu dropdown-menu-dark">
-                                        <li>
-                                            <a class="dropdown-item" href="#">Multi level 1</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Multi level 2</a>
-                                        </li>
-                                    </ul>
+                                    <a class="dropdown-item" href="/Frontend/Javascript/js-communication.html">Comunicación JavaScript - Python</a>
                                 </li>
                             </ul>
                         </li>
@@ -285,10 +194,8 @@
                                 Optimizar tu computadora
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Frontend/extra/optim-windows.html">Alternativa 1 -
-                                        Optimizar Windows</a></li>
-                                <li><a class="dropdown-item" href="/Frontend/extra/optim-linux.html">Alternativa 2 -
-                                        Instalación de Linux</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/extra/optim-windows.html">Alternativa 1 - Optimizar Windows</a></li>
+                                <li><a class="dropdown-item" href="/Frontend/extra/optim-linux.html">Alternativa 2 - Instalación de Linux</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -319,23 +226,22 @@
         <div class="div-master">
             <div class="row">
                 <!--Sección de minidefiniciones-->
+
                 <div class="col-3 div-aclaraciones">
-                    Veamos este error
-                    quepasaDX at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
-                    vel
-                    nisi.
-                    Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                    volutpat. Aenean
-                    sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat. Cras
-                    mattis
-                    vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                    viverra sit amet.
-                    Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis ligula,
-                    vel luctus
-                    diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus in
-                    scelerisque
-                    ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                    <div class="card text-dark opacity-75" style="width: 18rem;">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title text-dark">Clase</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Definición</h6>
+                        <p class="card-text text-dark">
+                            Por ahora la manera mas sencilla de definir una Clase es
+                            imaginarla como si fuera una pequeña fabrica que crea clones (Objetos)
+                            de algo
+                          </p>
+                        </div>
+                    </div>
                 </div>
+                <!--Sección de minidefiniciones-->
+
 
                 <div class="col-9">
                     <div class="stater-template">
@@ -346,25 +252,7 @@
 
                     <h4 id="Algoritmo-JavaNotions-list">Algoritmos</h4>
                     <p>
-                        quepasaDX at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus
-                        eget
-                        vel
-                        nisi.
-                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                        volutpat. Aenean
-                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
-                        Cras
-                        mattis
-                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                        viverra sit amet.
-                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
-                        ligula,
-                        vel luctus
-                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
-                        in
-                        scelerisque
-                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
-                    </p>
+                        Un algoritmo es un procedimiento (método) para resolver problemas. Este procedimiento puede ser matemático o lógico. El método permite dividir el problema en una serie de pasos sencillos.                    </p>
                     <h4 id="Var&Cons-JavaNotions-list">Variables y costantes</h4>
                     <p>
                         Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
@@ -485,26 +373,59 @@
                     </div>
                     <br>
                     </p>
-                    <h4 id="Api-JavaNotions-list">Api de Java</h4>
+                    <h4>Api Java</h4>
                     <p>
-                        Vivamus at velit non turpis eleifend pellentesque. Nulla a mi ac felis sagittis tempus eget
-                        vel
-                        nisi.
-                        Pellentesque blandit mi efficitur facilisis euismod. Nunc et ligula mauris. Aliquam erat
-                        volutpat. Aenean
-                        sapien nulla, sagittis non ipsum eu, porta tincidunt nisl. Donec lacinia luctus volutpat.
-                        Cras
-                        mattis
-                        vestibulum varius. Sed vitae eleifend sapien. Cras facilisis metus augue, sed aliquet elit
-                        viverra sit amet.
-                        Quisque id dictum sapien. Vivamus in ornare mi, ut iaculis ante. Sed mattis convallis
-                        ligula,
-                        vel luctus
-                        diam imperdiet sed. Fusce sit amet elit sed ex faucibus dignissim. Sed diam augue, dapibus
-                        in
-                        scelerisque
-                        ut, commodo nec enim. Nullam ornare lorem dui, at porta mi blandit nec.
+                        <div class="form-group">
+                            <label>
+                                Los Paquetes contienen Clases<br>
+                                Las Clases contienen atributos y metodos.
+                                <br>
+                                <br>
+                            </label>
+                            <img src="../img/parClassMet.png" class="img-fluid rounded" alt="...">
+                            <br>
+                            <br>
+                            <label>
+                                Entendiendo esta distribución podemos entender un poco mas a fondo la <a href="https://docs.oracle.com/javase/7/docs/api/" class="link-warning">Api de Java</a>
+                            </label>
+                            <br>
+                            <br>
+                            <img src="../img/api explicada.png" class="img-fluid rounded" alt="...">
+                            <br>
+                            <br>
+                            <h5>Ejemplo - Clase Scanner</h5>
+                            <br>
+                            <label>La clase Scanner pertenece al paquete Java.util por lo cual buscamos en la sección de paquetes: </label>
+                            <br>
+                            <br>    
+                            <img src="../img/api-paq.png" class="img-fluid rounded" alt="...">
+                            <br>
+                            <br>
+                            <label>Vamos a la sección de Clases, donde nos aparecerán todas las clases pertenecientes al paquete Java.util y seleccionamos</label>
+                            <br>
+                            <br>
+                            <img src="../img/api-class.png" class="img-fluid rounded" alt="...">
+                            <br>
+                            <br>
+                            <label>Y se muestra la explicación de la clase, su funcionamiento, todos sus metodos y sus atributos listos para ser utilizados</label>
+                            
+                            <br>
+                            <br>
+                            <img src="../img/api-result.png" class="img-fluid rounded" alt="...">
+                            <br>
+                            <br>
+                            <label>Al llegar al area del Resumen de los métodos, vemos el tipo de dato que retornan los metodos a la izquierda, y el nombre y una descripción del metodo a la derecha</label>
+                            <br>
+                            <br>
+                            <img src="../img/api-met.png" class="img-fluid rounded" alt="...">
+                            <br>
+                            <br>
+                            <label>Tras esta breve explicación y algo de práctica podrás manejar Java y su api de manera fluida</label>
+                        </div>
                     </p>
+                    
+                    
+                    
 
 
                 </div>
