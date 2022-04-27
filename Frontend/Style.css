@@ -138,3 +138,10 @@ body{
     background: -moz-linear-gradient(top, #576d46, #9dc75e);
     background: linear-gradient(to bottom, #576d46, #9dc75e);
 }
+
+.zoom{
+  transition: transform .3s;
+}
+.zoom:hover{
+  transform: scale(1.5);
+}

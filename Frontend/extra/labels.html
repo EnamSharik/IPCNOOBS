@@ -244,22 +244,22 @@
             <div class="row">
                 <!--Sección de minidefiniciones-->
                 <div class="col-3 div-aclaraciones">
-                    <h5>Direcciones URL relativas vs Absolutas</h5>
-                    <label>
-                        Las direcciones URL son una parte muy importante dentro del codigo ya que nos permite acceder a
-                        diferentes carpetas o archivos sin importar el tipo que este sea.<br />
-                        Cada vez que utilicemos una ruta es importante identificar si necesitamos usar una relativa o
-                        una absoluta. La diferencia entre estas dos es que en la relativa se puede acceder desde
-                        cualquier lugar en el que se encuentren los archivos, es decir que no importa si tenemos el
-                        codigo dentro de una computadora o otra computadora, siempre que la ruta sea relativa nuestro
-                        codigo seguirá funcionando correctamente. <br />
-                        Ejemplo de ruta relativa:<br />
-                        <img src="/Frontend/img/POO_Clas.png" class="img-fluid" alt="..."><br />
-                        Ejemplo de ruta absoluta:<br />
-                        <img src="/Frontend/img/POO_Clas.png" class="img-fluid" alt="...">
+                    <div class="card text-dark opacity-75" style="width: 18rem;">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">Bibliografía </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Libros</h6>
+                            <p class="card-text text-dark">
+                                A continuación puedes acceder a una carpeta con diversos libros que hemos recolectado a
+                                lo largo de los años, los cuales son de mucha utilidad para entender estos temas a
+                                profundidad.</p>
 
+                            <img src="/Frontend/img/LibroPortadaH.png" class="img-fluid"></p>
+                            <a href="https://drive.google.com/drive/folders/1ShZsa1uWjERp79gOCnXSvgTrku-CkKeH?usp=sharing"
+                                class="btn btn-outline-success btn-sm">Ver libros</a>
 
-                    </label>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-9">
@@ -269,9 +269,45 @@
                             página web y su respectivo contenido mediante el uso de etiquetas, además se puede dar
                             estilos utilizando CSS del cual se aprenderá en otra sección de esta página.<br />
                             Muchas personas que inician en la programación creen que HTML es un lenguaje de
-                            programación, sin embargo este no es un lenguaje de programación.<br />
+                            programación, sin embargo este no es un lenguaje de programación.
                         </p>
                     </div>
+
+                    <div class="card text-dark opacity-75" style="width: 40 rem;">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">Direcciones URL relativas vs Absolutas </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Definición</h6>
+                            <p class="card-text text-dark">
+                                Las direcciones URL son una parte muy importante dentro del codigo ya que nos permite
+                                acceder a
+                                diferentes carpetas o archivos sin importar el tipo que este sea.<br />
+                                Cada vez que utilicemos una ruta es importante identificar si necesitamos usar una
+                                relativa o
+                                una absoluta. La diferencia entre estas dos es que en la relativa se puede acceder desde
+                                cualquier lugar en el que se encuentren los archivos, es decir que no importa si tenemos
+                                el
+                                codigo dentro de una computadora o otra computadora, siempre que la ruta sea relativa
+                                nuestro
+                                codigo seguirá funcionando correctamente.</p>
+
+                            Ejemplo de ruta absoluta:<br />
+                            <img class="zoom" src="/Frontend/img/HTML_RutaAbsoluta.png" class="img-fluid"
+                                alt="..."><br />
+                            Ejemplo de ruta relativa:<br />
+                            <img class="zoom" src="/Frontend/img/HTML_RutaRelativa.png" class="img-fluid" alt="..."></p>
+                            En las rutas anteriores se observa que la absoluta comienza desde el disco "C", mientras que
+                            la absoluta hace referencia a la carpeta actual y hacia la siguiente carpeta o archivo en la
+                            que se quiere acceder.
+
+                        </div>
+                    </div>
+                    </p>
+                    </p>
+
+
+
+
+
                     <div class="form-group">
                         <h2> Elementos</h2>
                         <label>Los elementos permiten definir la estructura del documento, los cuales son los que
@@ -350,12 +386,6 @@
 
                             </p>
                         </label>
-                        <p class="text-white bg-dark">Esta es la clase Persona con sus atributos y
-                            metodos.<br /></p>
-                        <img src="/Frontend/img/POO_Clas.png" class="img-fluid" alt="...">
-                        <p class="text-white bg-dark">Esta es la forma en la que se declaran las
-                            instancias para crear un objeto.</p>
-                        <img src="/Frontend/img/POO_instanci.png" class="img-fluid" alt="...">
 
                         <h2 class="text-white bg-dark">Eventos</h2>
                         <label>Es la posibilidad de interactuar por parte del usuario o por parte del propio documento.
@@ -629,6 +659,106 @@
                             style, title, lang y xml:lang.</p>
                         </label><br />
                         <h2 class="text-white bg-dark">Elementos para definir una tabla</h2>
+                        <h4>•
+                            table
+                        </h4>
+                        <label>Se emplea para definir una
+                            tabla. Los principales atributos son: align (desaconsejado), bgcolor (color
+                            de fondo, desaconsejado), border
+                            (ancho del borde), cellpadding
+                            (espacio entre la celda y su contenido),
+                            cellspacing (espacio entre las celdas),
+                            frame (especifica las partes de afuera
+                            de los bordes que serán visibles), rules
+                            (especifica las partes interiores de los
+                            bordes que serán visibles), summary
+                            (sumario de contenido de la tabla),
+                            width (ancho de la tabla), id, class, dir,
+                            style, title, lang y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            td
+                        </h4>
+                        <label>Con esta etiqueta se define una
+                            celda en una tabla. Los principales atributos son: abbr (texto abreviado del contenido de
+                            la celda), align, axis (categoría de la
+                            celda), bgcolor (color de fondo de la
+                            celda, desaconsejado), char (alinea el
+                            contenido de la celda a un carácter),
+                            charoff (permite especificar el número
+                            de caracteres para alinear, respecto
+                            de los indicados en char), colspan
+                            (permite indicar el número de columnas
+                            que la celda puede abarcar), headers
+                            (encabezado de la tabla relativo a una
+                            celda), scope (indica la manera de
+                            asociar los encabezados de celda con el
+                            contenido de celda en la tabla), height
+                            (desaconsejado), width, nowrap (indica
+                            que el contenido no se puede envolver,
+                            desaconsejado), rowspan (indica el
+                            número de celdas que pueden ser
+                            abarcadas), valign (alineación vertical en
+                            la celda, desaconsejado), id, class, dir,
+                            style, title, lang y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            tr
+                        </h4>
+                        <label>Define una fila en una tabla. Los principales atributos son: align, bgcolor
+                            (desaconsejado), char,
+                            charoff, valign, id, class, dir, style,
+                            title, lang y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            th
+                        </h4>
+                        <label>Se utiliza para definir la celda
+                            de encabezado de una tabla. Los principales atributos son: abbr, align, axis, bgcolor
+                            (desaconsejado), char, charoff, colspan,
+                            scope, height (desaconsejado),
+                            width (desaconsejado), nowrap
+                            (desaconsejado), rowspan, valign,
+                            id, class, dir, style, title, lang y
+                            xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            col
+                        </h4>
+                        <label>Permite indicar los atributos de
+                            una columna de una tabla. Los principales atributos son: align, char, charoff, span, valign,
+                            width, id, class, dir, style, title, lang
+                            y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            colgroup
+                        </h4>
+                        <label>Se utiliza para agrupar columnas de una tabla (para poder
+                            darles formato). Los principales atributos son: align, char, charoff, span, valign,
+                            width, id, class, dir, style, title, lang
+                            y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            tbody
+                        </h4>
+                        <label>Agrupa contenido en el cuerpo
+                            de una tabla. Los principales atributos son: align, char, charoff, valign, id, class,
+                            dir, style, title, lang y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            tfoot
+                        </h4>
+                        <label>Define el pie de una tabla. Los principales atributos son: align, char, charoff, valign,
+                            id, class,
+                            dir, style, title, lang y xml:lang.</p>
+                        </label><br />
+                        <h4>•
+                            caption
+                        </h4>
+                        <label>Permite definir el título de una
+                            tabla. Los principales atributos son: align (desaconsejado), id, class, dir,
+                            style, title, lang y xml:lang.</p>
+                        </label><br />
                     </div>
                 </div>
             </div>
