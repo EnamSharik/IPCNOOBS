@@ -36,8 +36,35 @@ body{
     filter: blur(7px);
 }
 
+.contenedor-mov{
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+
+}
+
+.elemento {
+  width: 150px;
+  height: 150px;
+
+  transition-property: border-radius, transform;
+  
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;;
+  transition-delay: 0s;
+}
+
+.contenedor-mov:hover .elemento{
+  border-radius: 50%;
+  transform: translateX(150px);
+}
+
 .div-aclaraciones {
   padding-top: 9%;
+}
+
+.card-indentify{
+  padding: 20px;
 }
 
 .div-master{
