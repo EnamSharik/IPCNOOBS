@@ -16,7 +16,6 @@ body{
 
 .background-page{
     background: url("img/back2.jpg");
-    background: url("img/Fondo4.png");
     background-size: cover;
     width: 100%;
     position: fixed;
