@@ -186,7 +186,7 @@
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     </li>
                     </ul>
@@ -215,6 +215,43 @@
 
                                 <b>Ejemplo</b><br>
                                 EXIT_ON_CLOSE
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card text-dark opacity-75">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">setBounds</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Metodos</h6>
+                            <p class="card-text text-dark">
+                                Este método sirve para posicionar elementos dentro de un jframe o un jpanel, además del tamaño de los mismos en pixeles<br> <br>
+                                setBounds(x,y,ancho,alto); <br> <br>
+
+                                <b>Ejemplo</b> <br>
+                                setBounds(20,50,200,100)
+
+                                <b>NOTA:</b>
+                                Para poder utilizar este método es necesario utilizar un método extra
+                                que sirve para anular la dispocisión por defecto de los componentes en los JPanel.
+                                Simplemente se agrega:
+                                <br> <br>
+                                setLayout(null)
+                                esto se agrega al panel.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card text-dark opacity-75">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">setSize</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Metodos</h6>
+                            <p class="card-text text-dark">
+                                Este metodo se usa para establecer el tamaño de cualquier componente en pixeles <br> <br>
+                                setSize(ancho,alto); <br> <br>
+
+                                <b>Ejemplo</b> <br>
+                                setSize(200,100)
+
                             </p>
                         </div>
                     </div>
@@ -295,10 +332,18 @@
                         Se agregan estos metodos al constructor bajo la siguiente logica: el constructor es quien provee
                         los parametros de inicializacion.
                         <img src="../img/[Java_Components]Frame_Constructor.png" class="img-fluid">
+
                         Luego de crear el constructor, basta con inicializar el objeto en la clase main y podrémos ver
                         la ventana
                         vacía.
+
+                        <center>
+                            <img src="../img/Jframe-swing.png" class="img-fluid">
+                        </center>
+                        
+
                         <br><br><br>
+
                         <h4>JPanel</h4>
                         Un panel puede representarse como una hoja sobre una mesa, donde la mesa es un JFrame.<br>
                         Cuando escribimos sobre una hoja, esta está apoyada usualmente sobre una mesa.
@@ -307,10 +352,67 @@
                         se le pueden agregar propiedades como posición, color, tamaño, etc.
                         <br>Puedes agregar todos los paneles que desees a tu JFrame<br>
                         <br>
+                        <b>Constructores</b>
+                        <ol class="bg-transparent text-white w-75 list-group">
+                            <li class="list-group-item"><b>JPanel()</b>
+                                Constructor vacio, solo es un panel sin configuraciones previas
+                            </li>
+                            <li class="list-group-item"><b>JPanel(LayoutManager layout)</b> Define la
+                                manera en la que se distribuirán los componentes que se le asignen.
+
+                            </li>
+                        </ol>
                         <br>
+                        <b>Métodos</b>
+                        <div class="row" style="padding: 20px;">
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setBackground(Color bg)</h5>
+                                        <p class="card-text text-dark">
+                                            Colorea el componente al cual se le agregue este método <br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setLayout(Color bg)</h5>
+                                        <p class="card-text text-dark">
+                                            Colorea el componente al cual se le agregue este método <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">add(JComponent componente)</h5>
+                                        <p class="card-text text-dark">
+                                            Agrega un elemento que haya heredado de JComponent (Todos los componentes en
+                                            este tutorial heredan de JComponent)
+                                            al JPanel, al JFrame o a cualquier componente que lo soporte.
+                                        </p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        Al agregar el panel al JFrame tenemos lo siguiente: <br>
+                        <br>
+                        <img src="../img/panel_in_frame.png" alt="" class="img-fluid">
+                        <center>
+                            <img src="../img/panelRed.png" alt="" class="img-fluid">
+                        </center>
+                        
+                        <br>   <br> 
+                        Posteriormente mostraremos la implementación de varios paneles y la utilidad de los mismos. 
+
+                        <br>  <br>   <br>
                         <h4>JTextField</h4>
                         JTextField son campos de texto de una sola linea. <br><br>
-                        Algunos de los constructores son los siguientes: <br><br>
+
+                        <b>Constructores</b>
                         <ol class="bg-transparent text-white w-75 list-group">
                             <li class="list-group-item"><b>JTextField(int columns)</b> Cantidad de espacios que ocupará
                                 el TextField</li>
@@ -319,14 +421,15 @@
                                 defecto</li>
                         </ol>
                         <br><br>
-                        Algunos de los metodos mas utilizados serían los siguientes: <br><br>
+                        <b>Métodos</b>
+
                         <div class="row" style="padding: 20px;">
                             <div class="col-6">
                                 <div class="card text-dark opacity-75">
                                     <div class="card-body text-dark">
                                         <h5 class="card-title text-dark">getText()</h5>
                                         <p class="card-text text-dark">
-                                            Retorna el contenido del JTextField
+                                            Retorna el contenido del JTextField en tipo String
                                         </p>
                                     </div>
                                 </div>
@@ -341,9 +444,12 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>    
                         </div>
-
+                        <img src="../img/txtFieldEnPanel.png" alt="" class="img-fluid">
+                        <center>
+                            <img src="../img/[muestra]textFieldInPanel.png" alt="" class="img-fluid">
+                        </center>
                     </div>
                 </div>
             </div>
