@@ -1,7 +1,20 @@
+@font-face {
+  font-family: fontRandom;
+  src: url("RobotoMono-Regular.ttf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
 
 body{
   padding: 2rem 0rem;
+  
+}
+
+.imageen{
+  width: 100%;
+
+
 }
 
 .div-central {
@@ -49,14 +62,14 @@ body{
 
   transition-property: border-radius, transform;
   
-  transition-duration: 1.5s;
+  transition-duration: 4.5s;
   transition-timing-function: ease-in-out;;
   transition-delay: 0s;
 }
 
 .contenedor-mov:hover .elemento{
   border-radius: 50%;
-  transform: translateX(150px);
+  transform: translateX(1140px);
 }
 
 .div-aclaraciones {
@@ -94,11 +107,36 @@ body{
     text-align: center;
     color: white
   } 
-
+  a{
+    font-family: fontRandom;
+  }
+  ul{
+    font-family: fontRandom;
+  }
+  
+  h1{
+    font-family: fontRandom;
+    color: white
+  }
   h2{
+    font-family: fontRandom;
     color: white
   }
   h3{
+    font-family: fontRandom;
+    color: white
+    
+  }
+  h4{
+    font-family: fontRandom;
+    color: white
+  }
+  h5{
+    font-family: fontRandom;
+    color: white
+  }
+  h6{
+    font-family: fontRandom;
     color: white
   }
 
@@ -114,15 +152,18 @@ body{
   label{
     color: #ffffff;
     text-align: justify;
+    font-family: fontRandom;
   }
 
   dt{
     color: white;
     text-align: center;
+    font-family: fontRandom;
   }
 
   p{
     text-align: justify;
+    font-family: fontRandom;
   }
 
   #imgProvocaScroll {
