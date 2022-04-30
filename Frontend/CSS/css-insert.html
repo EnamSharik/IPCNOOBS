@@ -186,7 +186,7 @@
                                 </li>
                             </ul>
                         </li>
-                    
+
                     </ul>
                     </li>
                     </ul>
@@ -212,7 +212,8 @@
                                 La compatibilidad con los navegadores es de suma importancia al trabajar, ya que de lo
                                 contrario la misma no funcionaría correctamente. </p>
                             Algunos navegadores requieren el uso de los prefijos -moz (para el navegador Moziilla),
-                            -webkit (kpara WebKit), y -o (para Opera).
+                            -webkit (kpara WebKit), y -o (para Opera).</p></p>
+                            Nota: los conceptos encontrados en esta página fueron extraidos de libros, como los que se encuentran al presionar el botón.
                             <img src="/Frontend/img/css icono.png" class="img-fluid"></p>
                             <a href="https://drive.google.com/drive/folders/1ShZsa1uWjERp79gOCnXSvgTrku-CkKeH?usp=sharing"
                                 class="btn btn-outline-success btn-sm">Ver libros</a>
@@ -224,7 +225,7 @@
 
                 <div class="col-9">
                     <div class="stater-template">
-                        <h1>Metodos para implementar CSS en tus HTML</h1>
+                        <h1>Conceptos para implementar CSS en tus HTML</h1>
                         <p class="lead">
                             Es importante saber que CSS no es un lenguaje de programación, sino que es un lenguaje de
                             diseño gráfico.
@@ -311,6 +312,146 @@
                         <br />
 
                         </p></label>
+                    <h2 class="text-white bg-dark">Transformación</h2>
+                    <label>La propiedad denominada transformation es una de las más
+                        sorprendentes entre las que se incluyen en CSS3, ya que nos permite
+                        transformar elementos en 2D y también en 3D.
+                        Por defecto, el valor de esta propiedad corresponde a none, pero
+                        puede trabajar con una gran variedad de funciones de transformación,
+                        entre las que encontramos las siguientes:<br />
+                        <h4>• matrix</h4>
+                        <label> Se trata de una función que permite definir una
+                            transformación 2D recibiendo una matriz de 6 valores. </p></label><br />
+                        <h4>• matrix3d</h4>
+                        <label> Permite definir una transformación 3D recibiendo una
+                            matriz de 4x4 (16 valores en total). </p></label><br />
+                        <h4>• translate</h4>
+                        <label> Esta función nos permite definir una traslación 2D; recibe
+                            las coordenadas de los ejes X e Y. </p></label><br />
+                        <h4>• translate3d</h4>
+                        <label> Se puede utilizar para definir una traslación 3D; recibe
+                            las coordenadas de los ejes X, Y, Z. </p></label><br />
+                        <h4>• translateX</h4>
+                        <label> Es una función que podemos emplear para definir una
+                            traslación en el eje X; recibe solo ese valor. </p></label><br />
+                        <h4>• translateY</h4>
+                        <label> Se emplea para acceder a una traslación en el eje Y;
+                            debemos saber que recibe solo ese valor. </p></label><br />
+                        <h4>• translateZ</h4>
+                        <label> Se trata de una función que emplea para definir una
+                            traslación en el eje Z; recibe solo ese valor. </p></label><br />
+                        <h4>• scale</h4>
+                        <label> Se usa para escalar un elemento en 2D; recibe valores de X e Y. </p></label><br />
+                        <h4>• scale3d</h4>
+                        <label> Escala un elemento en 3D; recibe valores de X, Y, Z. </p></label><br />
+                        <h4>• scaleX</h4>
+                        <label> Permite definir una transformación en escala dada por un
+                            valor del eje X que le pasamos. </p></label><br />
+                        <h4>• scaleY</h4>
+                        <label> Permite definir una transformación en escala dada por un
+                            valor del eje Y que le pasamos. </p></label><br />
+                        <h4>• scaleZ</h4>
+                        <label> Permite definir una transformación en escala dada por un
+                            valor del eje X que le pasamos. </p></label><br />
+                        <h4>• rotate</h4>
+                        <label> Se usa para rotar el elemento en 2D; recibe un valor angular. </p></label><br />
+                        <h4>• rotate3d</h4>
+                        <label> Se utiliza para realizar la rotación del elemento en 3D;
+                            recibe los valores de X, Y, Z y el ángulo. </p></label><br />
+                        <h4>• rotateX</h4>
+                        <label> Permite definir una rotación en 3D a lo largo del eje X. </p></label><br />
+                        <h4>• rotateY</h4>
+                        <label> Permite definir una rotación en 3D a lo largo del eje Y. </p></label><br />
+                        <h4>• rotateZ</h4>
+                        <label> Permite definir una rotación en 3D a lo largo del eje Z. </p></label><br />
+                        <h4>• skew</h4>
+                        <label> Recibe los valores del ángulo X y el ángulo Y. Permite “torcer” el
+                            elemento en 2D en esos dos ejes. </p></label><br />
+                        <h4>• skewX</h4>
+                        <label> Se encarga de recibir el valor del ángulo X. Nos permite
+                            “torcer” el elemento en 2D en ese eje. </p></label><br />
+                        <h4>• skewY</h4>
+                        <label> Esta función recibe el valor del ángulo Y. También permite
+                            “torcer” el elemento en 2D en ese eje. </p></label><br />
+                        <h4>• perspective</h4>
+                        <label> Recibe un solo valor y permite definir una perspectiva
+                            para un elemento transformado en 3D. </p></label><br />
+                        </p>
+                    </label>
+                    <h2 class="text-white bg-dark">Transición</h2>
+                    <label>La propiedad transition le otorga a CSS3 una característica visual que
+                        permite lograr mejores animaciones empleando estilos. Básicamente,
+                        lo que nos ofrece esta característica es la posibilidad de establecer una
+                        propiedad cuando un elemento pasa de un estilo a otro. Un ejemplo
+                        simple de esto lo encontramos cuando pasamos el mouse sobre un
+                        enlace; si tenemos definido que cuando ocurra esa acción el enlace
+                        cambie de color, podemos establecer un efecto para esa transición.
+                        Debemos saber que se puede utilizar-webkit-transition para
+                        navegadores basados en WebKit y -o-transition para Opera. Es
+                        importante destacar que transition funciona como una propiedad shorthand que puede recibir los
+                        valores de las propiedades
+                        transition-property (nombre de la propiedad a la que se aplicará la
+                        transición), transition-duration (duración de la transición), transitiontiming-function (curva
+                        de transición del efecto) y transition-delay (permite
+                        indicar la demora o el momento en que la transición comienza).<br /><br />
+
+                        Ahora, comenzaremos a detallar cada una de las propiedades de
+                        transición. En el caso de transition-property, la transición puede recibir
+                        los valores none o all (predeterminado). También es posible indicar,
+                        separando por comas, cada una de las propiedades a las que se le
+                        desea aplicar la transición correspondiente.
+                        La propiedad denominada transition-duration se emplea para indicar el
+                        tiempo que durará la transición, y puede recibir el valor expresado en
+                        segundos (s) o también milisegundos (ms).<br /><br />
+                        Las transiciones no siempre tienen el mismo tiempo de comienzo
+                        y final; para establecer esto, podemos utilizar la propiedad transitiontiming-function. Esta
+                        puede recibir los valores linear, ease, ease-in, ease-out y ease-in-out. También se puede
+                        utilizar cubic-bezier y pasarle,
+                        entre paréntesis, cuatro valores que pueden ser decimales de 0 a 1.
+                        Por ejemplo, ease equivale a cubic-bezier(0.25,0.1,0.25,1). La ventaja
+                        de trabajar con los valores predefinidos es que estos nos permiten
+                        generar efectos ya conocidos y estándares; por su parte, hacerlo con
+                        cubic-bezier nos habilita más posibilidades y la capacidad de tener más
+                        control sobre esta interesante característica.
+                        La propiedad transition-delay por defecto tiene un valor 0 y puede
+                        recibir valores expresados en segundos (s) o milisegundos (ms).
+                        Los efectos de transición tienen muchas aplicaciones, pero, además
+                        de emplearse para animaciones complejas, en el diseño web general
+                        pueden ser muy útiles para aplicarlas a enlaces, menús o incluso los
+                        famosos acordeones.
+                        <br />
+                    </label></p>
+                    <h2 class="text-white bg-dark">Opciones de animación</h2>
+                    <label>Las opciones específicas de animación que incorpora CSS3 le permiten,
+                        al diseñador, modificar las propiedades de estilos en el tiempo.
+                        Con la regla @keyframes, podremos especificar cómo la animación
+                        irá cambiando. Al definir la regla, debemos darle un nombre y, luego,
+                        determinaremos cómo se modifican las propiedades y los valores en el
+                        tiempo, indicando en porcentaje los avances.
+                        <br /><br />
+
+                        Es importante mencionar que para usar con WebKit, se puede utilizar
+                        la regla conocida como @-webkit-keyframes.
+                        Para animación, también se agrega la propiedad shorthand animation,
+                        la cual se encarga de recibir los valores de las propiedades animationname, animation-duration,
+                        animation-timing-function, animation-delay,
+                        animation-iteration-count y animation-direction.<br /><br />
+                        La propiedad animation-name permite indicar el nombre de la
+                        animación para la regla @keyframes. Con animation-duration, podremos
+                        indicar el tiempo de la animación en segundos. Si utilizamos animationtiming-function, podremos
+                        indicar la curva de la animación. El valor por
+                        defecto es ease, pero también podremos aplicar ease-in, ease-out, easein-out, linear y
+                        cubic-bezier. Con la propiedad animation-delay, podremos
+                        especificar el tiempo de demora en segundos. Si empleamos animationiteration-count, podremos
+                        especificar la cantidad de iteraciones con un
+                        número o con el valor infinite (infinito). La propiedad animation-direction
+                        nos ofrece la posibilidad de indicar si la animación se ejecutará
+                        también en reversa. Por defecto, su valor es normal (sin reversa). Si
+                        aplicamos el valor alternate, la animación se correrá normalmente, luego
+                        en reversa y, después, comenzará a alternar.
+                        <br />
+                    </label>
+
                 </div>
             </div>
 
