@@ -255,6 +255,21 @@
                             </p>
                         </div>
                     </div>
+                    <br>
+                    <div class="card text-dark opacity-75">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">setBackground</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Metodos</h6>
+                            <p class="card-text text-dark">
+                                Le da un color al componente que se le asigne este metodo. <br> <br>
+                                setBackground(Color color); <br> <br>
+
+                                <b>Ejemplo</b> <br>
+                                setBackground(Color.RED)
+
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-9">
@@ -450,6 +465,128 @@
                         <center>
                             <img src="../img/[muestra]textFieldInPanel.png" alt="" class="img-fluid">
                         </center>
+                        <h4>JLabel</h4>
+                        JLabel son etiquetas de texto.
+                        <br> <br>
+                        <b>Constructores</b>
+                        <ol class="bg-transparent text-white w-75 list-group">
+                            <li class="list-group-item">
+                                <b>JLabel(Icon image)</b> Si se inicia este constructor con un objeto de tipo Icon, el Label hará la funcion de 
+                                marco para la imagen almacenada en el objeto Icon. 
+                            </li>
+                            <li class="list-group-item">
+                                <b>JLabel(String text)</b> Texto que mostrará la etiqueta
+                            </li>
+                        </ol>
+                        <br><br>
+                        <b>Métodos</b>
+
+                        <div class="row" style="padding: 20px;">
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">getText()</h5>
+                                        <p class="card-text text-dark">
+                                            Retorna el contenido del JLabel en tipo String
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setText()</h5>
+                                        <p class="card-text text-dark">
+                                            Asigna un texto al label
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setIcon()</h5>
+                                        <p class="card-text text-dark">
+                                            Asigna un objeto de tipo Icon a el JLabel
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setBackground()</h5>
+                                        <p class="card-text text-dark">
+                                            Establece un color de fondo para el JLabel
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setFont()</h5>
+                                        <p class="card-text text-dark">
+                                            Estable las propiedades de las letras del JLabel
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <img src="../img/label-in-panel.png" alt="" class="img-fluid">
+                        <center>
+                            <img src="../img/label-in-panel-example.png" alt="" class="img-fluid">
+                        </center>
+                        
+                        <br> <br> <br>
+                        <h4>JButton</h4>
+                        Este componente es un botón para poder realizar acciones.
+                        <br> <br>
+                        <b>Constructores</b>
+                        <ol class="bg-transparent text-white w-75 list-group">
+                            <li class="list-group-item">
+                                <b>JButton(Icon image)</b> Si se inicia este constructor con un objeto de tipo Icon, el Boton hará la funcion de 
+                                marco para la imagen almacenada en el objeto Icon. 
+                            </li>
+                            <li class="list-group-item">
+                                <b>JButton(String text)</b> texto que mostrará el botón
+                            </li>
+                        </ol>
+                        <br>
+                        <b>Métodos</b>
+                        <div class="row" style="padding: 20px;">
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">setText(String str)</h5>
+                                        <p class="card-text text-dark">
+                                            Establece el texto que mostrará el botón
+                                            <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-dark opacity-75">
+                                    <div class="card-body text-dark">
+                                        <h5 class="card-title text-dark">addActionListener(ActionListener oyente)</h5>
+                                        <p class="card-text text-dark">
+                                            Agrega una acción al botón al momento de ser presionado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        Para poder utilizar esta clase tendremos que implementar una clase llamada ActionListener, se hace de la siguiente manera.
+
+                        <img src="../img/Button_in_Label.png" alt="" class="img-fluid">
+                        <center>
+                            <img src="../img/boton-muestra-1.png" alt="" class="img-fluid">
+                        </center>
+                        <br>
+                        <center>
+                            <img src="../img/boton-muestra-2.png" alt="" class="img-fluid">
+                        </center>
+                        <br>
                     </div>
                 </div>
             </div>
