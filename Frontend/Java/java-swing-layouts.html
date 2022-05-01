@@ -192,6 +192,21 @@
             <div class="row">
                 <!--Sección de minidefiniciones-->
                 <div class="col-3 div-aclaraciones">
+                    <div class="card text-dark opacity-75">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title text-dark">setSize</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Metodos</h6>
+                            <p class="card-text text-dark">
+                                Este metodo se usa para establecer el tamaño de cualquier componente en pixeles <br> <br>
+                                setSize(ancho,alto); <br> <br>
+
+                                <b>Ejemplo</b> <br>
+                                setSize(200,100)
+
+                            </p>
+                        </div>
+                    </div>
+                    <br>
                  
                 </div>
 
@@ -217,11 +232,57 @@
                         sucesivamente. 
                         <br>
                         <br>
+                        <b>NOTA:</b>
+                        <br>JPanel por defecto utiliza FlowLayout
+                        <br>
+                        <br>
+                        Cuando Utilizamos FlowLayout basta con darle el tamaño al componente para que este pueda ser añadido sin problemas. 
+                        <br>
+                        <img src="../img/flowlayout_code.png" alt="" class="img-fluid">
+                        <br>
+                        <center>
+                            <img src="../img/flowlayout-muestra.png" alt="" class="img-fluid">
+                        </center>
+                        <br>
+                        Como puedes notar, todos los elementos se ponen en el panel en el orden en el que son añadidos. y considerando 
+                        el tamaño de los componentes.
+                        <br>
+                        <br>
+
+
                         <h4>BorderLayout</h4>
                         Distribuye los elementos utilizando el sistema de puntos cardinales NORTE, SUR, ESTE y OESTE e incluye la posición CENTRO.
                         Este distribución es especialmente útil para contener otras distribuciones de componentes 
                         o layouts dentro de si misma.
+                        <br>
+                        Veamos el funcionamiento de BorderLayout, y lo haremos a traves de paneles.
+                        <br>
+                        <img src="../img/BorderLayout-code.png" class="img-fluid" alt="">
+                        <br>
+                        Acá vemos muy pequeños en los bordes los paneles coloreados, sin embargo, al agregarles 
+                        componentes se hacen tan grandes como el compoente lo requiera, pues previamente se le asigna al componente 
+                        un tamaño con el metodo setSize()
+                        <br>
+                        <br>
+                        <b>NOTA:</b><br>
+                        Algo a tener en cuenta es que solo cambiamos la manera en la que el JFrame se distribuye, pero cada JPanel
+                        Como lo dijimos anteriormente tiene por defecto FlowLayout y acá lo sigue conservando a menos que decidamos quitarlo.
 
+                        <center>
+                            <img src="../img/BorderLayout-muestra.png" class="img-fluid" alt="">
+                        </center>
+                        <br>
+                        Y así luce al agregar botón.
+                        <center>
+                            <img src="../img/muestra-borderlayout-boton.png" class="img-fluid" alt="">
+                        </center>
+                        <br>
+                        <br>
+
+                        <h4>GridBagLayout</h4>
+                        Este layout es uno de los mas dificil de comprender pero es de los más poderosos pues permite organizar de cualquier manera
+                        los componentes, basandose en un sistema de rejas que en forma automática amoldará las dimensiones del componente añadido.
+                      
                     </div>
 
 
