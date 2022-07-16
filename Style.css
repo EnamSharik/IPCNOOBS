@@ -213,3 +213,7 @@ body{
 .zoom:hover{
   transform: scale(1.5);
 }
+
+#infoDevops{
+  text-align: center;
+}
